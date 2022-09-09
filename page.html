@@ -54,7 +54,7 @@
                         const article = data.filter(o => o.id === id)[0]
                         const container = $($('#content').html()
                             .replace(/\${img}/g, 'hotNews/' + article.img)
-                            .replace(/\${headimg}/g, 'hotNews/' +  (article?.headimg ?? article.img))
+                            .replace(/\${headimg}/g, 'hotNews/' +  (article.headimg === "" ? article.img : article.headimg))
                             .replace(/\${h5}/g, article.h5)
                             .replace(/\${title}/g, article.title)
                             .replace(/\${pdf}/g, article.pdf))
@@ -75,7 +75,7 @@
                         const article = data.filter(o => o.id === id)[0]
                         const container = $($('#content').html()
                             .replace(/\${img}/g, 'topicNews/' + article.img)
-                            .replace(/\${headimg}/g, 'topicNews/' + (article?.headimg ?? article.img))
+                            .replace(/\${headimg}/g, 'topicNews/' + (article.headimg === "" ? article.img : article.headimg))
                             .replace(/\${h5}/g, article.h5)
                             .replace(/\${title}/g, article.title)
                             .replace(/\${pdf}/g, article.pdf))

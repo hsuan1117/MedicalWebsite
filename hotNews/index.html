@@ -116,10 +116,10 @@
                class="text-danger">...繼續閱讀</a>
         </p>
         <div>
-            <a style="font-size: 18pt;cursor: pointer;color:#BCC0C8;"><i class="fa-brands fa-facebook-square"></i></a>
-            <a style="font-size: 18pt;cursor: pointer;color:#a1abc0;"><i class="fa-brands fa-instagram-square"></i></a>
-            <a style="font-size: 18pt;cursor: pointer;color:#647890;"><i class="fa-brands fa-line"></i></a>
-            <a style="font-size: 18pt;cursor: pointer;color:#515f73;"><i class="fa-brands fa-twitter-square"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#BCC0C8;" href="https://www.facebook.com/sharer.php?u=${link|encoded}" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#a1abc0;" href="http://instagram.com/sharer.php?u=${link|encoded}=${title}" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#647890;" href="http://line.naver.jp/R/msg/text/?${link}" target="_blank"><i class="fa-brands fa-line"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#515f73;" href="https://twitter.com/share?text=${title}&url=${link}" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
         </div>
     </div>
 </template>
@@ -157,7 +157,9 @@
                 .replace(/\${title}/g, article.title)
                 .replace(/\${pdf}/g, article.pdf)
                 .replace(/\${id}/g, article.id)
-                .replace(/\${link}/g, `../page.html?type=hotNews&id=${article.id}`))
+                .replace(/\${link}/g, new URL(`../page.html?type=hotNews&id=${article.id}`, document.location).href)
+                .replace(/\${link\|encoded}/g, encodeURIComponent(new URL(`../page.html?type=hotNews&id=${article.id}`, document.location).href))
+            )
             container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=hotNews&id=${article.id}&download=1`))
             $('#hot > .row').append(container)
         })
