@@ -156,8 +156,8 @@
                 .replace(/\${h5}/g, article.h5)
                 .replace(/\${title}/g, article.title)
                 .replace(/\${pdf}/g, article.pdf)
-                .replace(/\${link}/g, `../page.html?type=topicNews&id=${i}`))
-            container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=topicNews&id=${i}&download=1`))
+                .replace(/\${link}/g, `../page.html?type=topicNews&id=${article.id}`))
+            container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=topicNews&id=${article.id}&download=1`))
             $('#topic > .row').append(container)
         })
         $(`#jumpPage-${currentPage}`).addClass('active')
@@ -179,7 +179,7 @@
 
     $(() => {
         $.getJSON('../data/topicNews.json', (data) => {
-            articlesData = data.reverse()
+            articlesData = data.sort((a, b) => b.id - a.id)
             totalPage = Math.ceil(data.length / 10)
             makePagination()
             initPage()

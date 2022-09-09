@@ -158,7 +158,7 @@
                 .replace(/\${pdf}/g, article.pdf)
                 .replace(/\${id}/g, article.id)
                 .replace(/\${link}/g, `../page.html?type=hotNews&id=${article.id}`))
-            container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=hotNews&id=${i}&download=1`))
+            container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=hotNews&id=${article.id}&download=1`))
             $('#hot > .row').append(container)
         })
         $(`#jumpPage-${currentPage}`).addClass('active')
