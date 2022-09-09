@@ -156,7 +156,8 @@
                 .replace(/\${h5}/g, article.h5)
                 .replace(/\${title}/g, article.title)
                 .replace(/\${pdf}/g, article.pdf)
-                .replace(/\${link}/g, `../page.html?type=hotNews&id=${i}`))
+                .replace(/\${id}/g, article.id)
+                .replace(/\${link}/g, `../page.html?type=hotNews&id=${article.id}`))
             container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=hotNews&id=${i}&download=1`))
             $('#hot > .row').append(container)
         })
@@ -179,7 +180,7 @@
 
     $(() => {
         $.getJSON('../data/hotNews.json', (data) => {
-            articlesData = data.reverse()
+            articlesData = data.sort((a, b) => b.id - a.id)
             totalPage = Math.ceil(data.length / 10)
             makePagination()
             initPage()

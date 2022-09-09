@@ -42,21 +42,21 @@
         switch (query.get('type')) {
             case "hotNews":
                 $.getJSON('data/hotNews.json', (data) => {
-                    const id = data.length - Number(query.get('id')) - 1
-                    if (id >= 0 && id < data.length) {
-                        const article = data[id]
+                    const id = Number(query.get('id'))
+                    if(!data.map(o=>o.id).includes(id)){
+                        alert('文章不存在')
+                    } else {
+                        const article = data.filter(o => o.id === id)[0]
                         const container = $($('#content').html()
                             .replace(/\${img}/g, 'hotNews/' + article.img)
                             .replace(/\${h5}/g, article.h5)
                             .replace(/\${title}/g, article.title)
                             .replace(/\${pdf}/g, article.pdf))
-                        container.find('.article_content').load(`hotNews/data/${Number(query.get('id')) + 1}.html`)
+                        container.find('.article_content').load(`hotNews/data/${article.content}`)
                         article.footerImages.forEach(image=>{
                             container.find('.footer_images').append($(`<img src="hotNews/${image}" alt="圖片" class="w-full md:w-1/3"/>`))
                         })
                         $('#container').prepend(container)
-                    } else {
-                        alert('文章不存在')
                     }
                 })
                 break
