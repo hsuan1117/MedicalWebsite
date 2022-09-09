@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="振興園地：振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="振興園地,振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <title>影音專區 | 振興醫訊</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="../colorbox/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+ 
+ .embed-container iframe,
+ .embed-container object,
+ .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+ #accordion { width: 90%; margin: 40em auto; }
+    
+        @media only screen and (min-width: 768px) {
+            #about .col-md-4 img {
+                width: 100% !important;
+            }
+        }
+     
+    </style>
+</head>
+
+
+    <header>
+        <div class="logo">
+            <a href="https://www.chgh.org.tw/" target="_blank">
+                <img src="../images/logo-pic.gif" alt="" class="pic-1">
+                <img src="../images/logo-text.jpg" alt="" class="pic-2">
+            </a>
+        </div>
+        <div class="search">
+            <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </div>
+        <div id="hamburger">
+            <div class="hamT"></div>
+            <div class="hamM"></div>
+            <div class="hamB"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">醫訊首頁</a></li>
+                <li><a href="../focusNews/index.html">焦點新聞</a></li>
+                <li><a href="../hotNews/index.html">發燒話題</a></li>
+                <li><a href="../topicNews/index.html">專題報導</a></li>
+                <li><a href="../aboutUs/index.html">振興園地</a></li>
+                <li><a href="#" class="action">影音專區</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body>
+        <div id="accordion">
+          <!-- -->
+          <h3>헤이즈(Heize) - Jenga</h3>
+          <div>
+            <div class='embed-container'>
+              <iframe class="youtube-video" src='https://www.youtube.com/embed/uw_HR9jIJww?enablejsapi=1' frameborder='0' allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- -->
+     
+          <!-- -->
+          <h3>쏜애플(THORNAPPLE) - 낯선 열대</h3>
+          <div>
+            <div class='embed-container'>
+              <iframe class="youtube-video" src='https://www.youtube.com/embed/037avJv4-cY?enablejsapi=1' frameborder='0' allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- -->
+     
+          <!-- -->
+          <h3>Fromm(프롬) - Pieces of You and Me</h3>
+          <div>
+            <div class='embed-container'>
+              <iframe class="youtube-video" src='https://www.youtube.com/embed/jx6GBqZMB14?enablejsapi=1' frameborder='0' allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- -->
+        </div>
+     
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../colorbox/jquery-ui.min.js"></script>
+        <script>
+          $("#accordion").accordion();
+     
+          $('h3').click(function() {
+            $('.youtube-video').each(function() {
+              this.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', '*');
+            });
+          });
+        </script>
+      </body>
+    </html>
+<script src="../js/design.js"></script>
+<script src="js/data.js"></script>
+<!-- <script src="js/admin.js"></script> -->
+<!-- <script>
+    let title = document.getElementsByClassName("title");
+    let contents = document.getElementsByClassName("contents");
+    let i = document.getElementsByClassName("arrow");
+    for (const btn of title) {
+        btn.addEventListener("click", function () {
+            if (contents[this.getAttribute("value")].style.transform == "scaleY(1)" || contents[this.getAttribute("value")].style.transform == "") {
+                contents[this.getAttribute("value")].style.transform = "scaleY(0)";
+                contents[this.getAttribute("value")].style.display = "none";
+                i[this.getAttribute("value")].setAttribute("class", "fa-solid fa-caret-right arrow");
+            } else {
+                contents[this.getAttribute("value")].style.display = "block";
+                contents[this.getAttribute("value")].style.transform = "scaleY(1)";
+                i[this.getAttribute("value")].setAttribute("class", "fa-solid fa-caret-down arrow");
+            }
+        })
+    }
+    let imgBig = document.getElementsByClassName("w-100")[0];
+    let imgSmall = document.getElementsByClassName("small");
+    let imgtxt = document.getElementsByClassName("imgtxt")[0];
+    for (const k of imgSmall) {
+        k.addEventListener("click", function () {
+            imgBig.setAttribute("src", this.getAttribute("src"));
+            console.log(this.getAttribute("alt"))
+            imgtxt.textContent = this.getAttribute("alt");
+        })
+    }
+</script> -->
+<script>
+    let video = document.getElementsByTagName("video")[0];
+    let li = document.getElementsByTagName("li");
+    for (const btn of li) {
+        btn.addEventListener("click",function(){
+            let link = this.getAttribute("data-link");
+            let pic = this.getAttribute("data-pic");
+            video.setAttribute("src",link);
+            video.setAttribute("poster",pic);
+        })
+    }
+</script>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="發燒話題：振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="發燒話題,振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <link rel="icon" type="image/png" href="images/cross_logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>新聞報導</title>
+</head>
+
+<body>
+<div class="min-w-full min-h-full flex flex-col" id="large_container">
+    <div id="container" class="px-14 pt-4 md:px-8 lg:px-16 h-full text-justify indent-8"></div>
+    <footer class="w-full bg-sky-800 py-3 px-2 mt-4">
+        <div class="text-white text-center">&copy;2022振興醫療財團法人振興醫院Cheng Hsin General Hospital</div>
+    </footer>
+</div>
+<template id="content">
+    <div class="flex flex-col gap-2 items-center">
+        <img src="${img}" alt="圖片" class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2"/>
+        <h3 class="text-3xl font-bold indent-0 w-full text-center bg-slate-200 py-2 px-4 rounded">${title}</h3>
+        <h5 class="w-full text-left indent-0 text-gray-500">${h5}<button class="text-red-500 text-xl"  onclick="downloadPDF()">&nbsp<i class="fa-solid fa-file-pdf"></i></button></h5>
+        <div class="article_content">${content}</div>
+        <div class="footer_images flex flex-col md:flex-row gap-2 md:justify-center"></div>
+    </div>
+</template>
+<script>
+    $(() => {
+        const query = new URLSearchParams(location.search)
+
+        if (!query.has('type') || !query.has('id')) {
+            location.href = 'index.html'
+        }
+
+        switch (query.get('type')) {
+            case "hotNews":
+                $.getJSON('data/hotNews.json', (data) => {
+                    const id = data.length - Number(query.get('id')) - 1
+                    if (id >= 0 && id < data.length) {
+                        const article = data[id]
+                        const container = $($('#content').html()
+                            .replace(/\${img}/g, 'hotNews/' + article.img)
+                            .replace(/\${h5}/g, article.h5)
+                            .replace(/\${title}/g, article.title)
+                            .replace(/\${pdf}/g, article.pdf))
+                        container.find('.article_content').load(`hotNews/data/${Number(query.get('id')) + 1}.html`)
+                        article.footerImages.forEach(image=>{
+                            container.find('.footer_images').append($(`<img src="hotNews/${image}" alt="圖片" class="w-full md:w-1/3"/>`))
+                        })
+                        $('#container').prepend(container)
+                    } else {
+                        alert('文章不存在')
+                    }
+                })
+                break
+            case "topicNews":
+                $.getJSON('data/topicNews.json', (data) => {
+                    const id = data.length - Number(query.get('id')) - 1
+                    if (id >= 0 && id < data.length) {
+                        const article = data[id]
+                        const container = $($('#content').html()
+                            .replace(/\${img}/g, 'topicNews/' + article.img)
+                            .replace(/\${h5}/g, article.h5)
+                            .replace(/\${title}/g, article.title)
+                            .replace(/\${pdf}/g, article.pdf))
+                        container.find('.article_content').load(`topicNews/data/${Number(query.get('id')) + 1}.html`)
+                        article.footerImages.forEach(image=>{
+                            container.find('.footer_images').append($(`<img src="topicNews/${image}" alt="圖片" class="w-full md:w-1/3"/>`))
+                        })
+                        $('#container').prepend(container)
+                    } else {
+                        alert('文章不存在')
+                    }
+                })
+                break
+        }
+        if(query.has('download') && query.get('download') === '1'){
+            setTimeout(downloadPDF, 3000)
+        }
+    })
+    function downloadPDF() {
+        let element = document.getElementById("large_container");
+        html2pdf(element)
+    }
+</script>
+</body>
+</html>

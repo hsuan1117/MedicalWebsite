@@ -1,0 +1,56 @@
+h3 {text-align: center;
+    color: #3B3840; 
+    margin: 40px 40px 20px;
+	padding: 10px;
+	background-color: #F2C8C4;
+	border-style: ridge;
+	font-family: "華康黑體 Std W5";		
+}
+h5 {
+	text-align: left;
+	margin: 5px 40px 10px;
+	color: #8C5C51;
+	position: flex;
+	font-family: "華康黑體 Std W3";
+}
+.fa {
+  color : red;
+}
+.container {
+	display: fiex;
+	align-content: space-between;
+}
+body p{
+	margin:5px auto;
+
+	text-align: justify;
+	text-indent: 32px;
+	margin: 20px 80px 0px;
+	font-family: "華康黑體 Std W3";
+	text-align: justify;
+}
+#menu {
+    position: fixed;
+    right: 0;
+    top: 48%;
+    width: 5em;
+    margin-top: -2.5em;
+    list-style-type:none;
+	background-repeat: no-repeat;
+  }
+#menu .a:hover {
+      color: red;
+  }
+footer {
+	background: #A64949;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 1px 0 20px;	
+}
+footer p {
+	color: #fff;
+	font-family: "華康黑體 Std W3";
+	font-size: 18px;
+	text-align: center;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="專題報導：振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="專題報導,振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <title>專題報導 | 振興醫訊</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #topic {
+            margin-top: 120px;
+        }
+
+        #topic .row {
+            --bs-gutter-x: 0;
+        }
+
+        #topic .col-12 {
+            margin: 1.5em auto;
+            padding: 1em;
+        }
+
+        #topic img {
+            width: 100%;
+        }
+
+        #topic h5 {
+            font-size: 0.8em;
+            color: gray;
+            text-align: center;
+        }
+
+        #topic .bar {
+            width: 100%;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #topic .bar span {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            margin: 0 0.1em;
+            background-color: #DDD;
+            font-family: sans-serif;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="https://www.chgh.org.tw/" target="_blank">
+            <img src="../images/logo-pic.gif" alt="" class="pic-1">
+            <img src="../images/logo-text.jpg" alt="" class="pic-2">
+        </a>
+    </div>
+    <div class="search">
+        <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+    </div>
+    <div id="hamburger">
+        <div class="hamT"></div>
+        <div class="hamM"></div>
+        <div class="hamB"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">醫訊首頁</a></li>
+            <li><a href="../hotNews/index.html">熱門活動</a></li>
+            <li><a href="#" class="action">健康新知</a></li>
+            <li><a href="../aboutUs/index.html">振興園地</a></li>
+            <li><a href="../videoNews/index.html">影音專區</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container" id="topic">
+    <div class="row"></div>
+    <div class="bar"></div>
+</div>
+
+<div class="w-100 d-flex justify-content-center">
+    <ul class="pagination">
+        <li class="page-item" id="btn_previousPage">
+            <div class="page-link" onclick="previousPage()">上一頁</div>
+        </li>
+
+        <li class="page-item" id="btn_nextPage">
+            <div class="page-link" href="#" onclick="nextPage()">下一頁</div>
+        </li>
+    </ul>
+</div>
+<iframe id="downloadFrame" style="display: none;"></iframe>
+<footer>
+    地址：112北市北投區振興街45號<br>
+    電話：(02)2826-4400<br>
+    <br>
+    網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
+    <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載" style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
+</footer>
+<template id="topicnews">
+    <div class="col-12 col-sm-6 col-lg-4 item" style="display: block;">
+        <img src="${img}" alt="說明圖片">
+        <h5 style="padding-top: 0.5rem;">${h5}</h5>
+        <p>
+            ${title}
+            <a href="${link}"
+               target="_blank"
+               class="text-danger">...繼續閱讀</a>
+        </p>
+        <div>
+            <a style="font-size: 18pt;cursor: pointer;color:#BCC0C8;"><i class="fa-brands fa-facebook-square"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#a1abc0;"><i class="fa-brands fa-instagram-square"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#647890;"><i class="fa-brands fa-line"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#515f73;"><i class="fa-brands fa-twitter-square"></i></a>
+        </div>
+    </div>
+</template>
+<script>
+    let currentPage = 1
+    let totalPage = 0
+    let articlesData = {}
+
+    function nextPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage++;
+        initPage()
+    }
+
+    function previousPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage--;
+        initPage()
+    }
+
+    function jumpPage(page) {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage = page
+        initPage()
+    }
+
+    function initPage() {
+        $('#topic > .row').empty()
+        $(`#btn_previousPage`).removeClass('disabled')
+        $(`#btn_nextPage`).removeClass('disabled')
+
+        articlesData.slice((currentPage - 1) * 9, currentPage * 9).forEach((article, i) => {
+            const container = $($('#topicnews').html()
+                .replace(/\${img}/g, article.img)
+                .replace(/\${h5}/g, article.h5)
+                .replace(/\${title}/g, article.title)
+                .replace(/\${pdf}/g, article.pdf)
+                .replace(/\${link}/g, `../page.html?type=topicNews&id=${i}`))
+            container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=topicNews&id=${i}&download=1`))
+            $('#topic > .row').append(container)
+        })
+        $(`#jumpPage-${currentPage}`).addClass('active')
+        location.href = '#'
+
+        if (currentPage === 1) {
+            $(`#btn_previousPage`).addClass('disabled')
+        } else if (currentPage === totalPage) {
+            $(`#btn_nextPage`).addClass('disabled')
+        }
+    }
+
+    function makePagination() {
+        for (let i = totalPage; i > 0; i--)
+            $('#btn_previousPage').after(
+                $(`<li class="page-item ${i === currentPage ? 'active' : ''}" id="jumpPage-${i}" onclick="jumpPage(${i})"><div class="page-link" href="#">${i}</div></li>`)
+            );
+    }
+
+    $(() => {
+        $.getJSON('../data/topicNews.json', (data) => {
+            articlesData = data.reverse()
+            totalPage = Math.ceil(data.length / 10)
+            makePagination()
+            initPage()
+        })
+    })
+
+    function downloadPDF(link) {
+        $("#downloadFrame").attr('src', link)
+    }
+</script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/design.js"></script>
+<script src="../js/lightbox.js"></script>
+</body>
+</html>
