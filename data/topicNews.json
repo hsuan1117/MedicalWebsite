@@ -3,9 +3,54 @@
   {
     "img": "images/pic_08_01_01.jpg",
     "headimg": "images/pic_08_01.jpg",
-    "h5": "2022/09 文／曹殿萍（心臟血管內科主任）",
+    "h5": "2022/08 文/曹殿萍（心臟血管內科主任）",
     "title": "從「心」出發之血糖問題",
     "link": "從「心」出發之血糖問題",
+    "footerImages": [
+    
+    ],
+    "id": 18,
+    "content": "18.html"
+  },
+  {
+    "img": "images/pic_17.jpg",
+    "headimg": "images/pic_17_1.jpg",
+    "h5": "2022/08 文/劉復康（復健醫學部主任）",
+    "title": "下背痛該怎麼辦？",
+    "link": "下背痛該怎麼辦？",
+    "footerImages": [    
+    ],
+    "id": 17,
+    "content": "17.html"
+  },
+  {
+    "img": "images/pic_16.jpg",
+    "headimg": "images/pic_16_1.jpg",
+    "h5": "2022/08 文/蔡世澤（新陳代謝科兼營養治療科主任）",
+    "title": "糖尿病藥物胰島素的治療趨勢",
+    "link": "糖尿病藥物胰島素的治療趨勢",
+    "footerImages": [    
+    ],
+    "id": 16,
+    "content": "16.html"
+  },
+  {
+    "img": "images/pic_15.jpg",
+    "headimg": "images/pic_15_1.jpg",
+    "h5": "2022/09 文/陳奕賓（營養治療科營養師）",
+    "title": "外食挑得巧，血糖免煩惱",
+    "link": "外食挑得巧，血糖免煩惱",
+    "footerImages": [    
+    ],
+    "id": 15,
+    "content": "15.html"
+  },
+  {
+    "img": "images/pic_14.jpg",
+    "headimg": "images/pic_14_1.jpg",
+    "h5": "2022/08 文/張芷穎（藥學部藥師）",
+    "title": "維持漂亮血糖曲線的胰島素",
+    "link": "維持漂亮血糖曲線的胰島素",
     "footerImages": [
     
     ],
@@ -15,7 +60,7 @@
   {
     "img": "images/pic_08_02.jpg",
     "headimg": "images/pic_08.jpg",
-    "h5": "2022/08 文／黃建龍（心臟血管內科主治醫師）",
+    "h5": "2022/08 文/黃建龍（心臟血管內科主治醫師）",
     "title": "血管支架如何選？了解冠狀動脈支架治療新況",
     "link": "血管支架如何選？了解冠狀動脈支架治療新況",
     "footerImages": [
@@ -28,7 +73,7 @@
   {
     "img": "images/pic_12.jpg",
     "headimg": "images/pic_12.jpg",
-    "h5": "2022/08 文／陽厚生（心臟重建科主任兼心臟血管外科主治醫師)/洪家椿（心臟血管外科醫師）",
+    "h5": "2022/08 文/陽厚生（心臟重建科主任兼心臟血管外科主治醫師)/洪家椿（心臟血管外科醫師）",
     "title": "冠狀動脈繞道手術的長期治療現況",
     "link": "冠狀動脈繞道手術的長期治療現況",
     "footerImages": [
@@ -40,7 +85,7 @@
   {
     "img": "images/pic_11.jpg",
     "headimg": "images/pic_11_1.jpg",
-    "h5": "2022/08 文／鄧鐘泉（神經內科主任）",
+    "h5": "2022/08 文/鄧鐘泉（神經內科主任）",
     "title": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
     "link": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
     "footerImages": [
@@ -51,7 +96,7 @@
   {
     "img": "images/pic_10.jpg",
     "headimg": "",
-    "h5": "2022/08 文／陳奕賓（營養治療科營養師）",
+    "h5": "2022/08 文/陳奕賓（營養治療科營養師）",
     "title": "不想忘記你，預防失智怎麼吃",
     "link": "不想忘記你，預防失智怎麼吃",
     "footerImages": [
