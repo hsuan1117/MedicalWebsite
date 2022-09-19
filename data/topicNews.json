@@ -1,75 +1,175 @@
 [
+  
   {
-    "img": "images/pic_08.jpg",
-    "headimg": "images/pic_08.jpg",
-    "h5": "2022/08 文／黃建龍（心臟血管內科主治醫師）",
-    "title": "血管支架如何選？了解冠狀動脈支架治療新況",
-    "link": "subfolder202201_12/TNews_07_1.jpg",
+    "img": "images/pic_08_01_01.jpg",
+    "headimg": "images/pic_08_01.jpg",
+    "h5": "2022/08 文/曹殿萍（心臟血管內科主任）",
+    "title": "從「心」出發之血糖問題",
+    "link": "從「心」出發之血糖問題",
     "footerImages": [
-      "images/pic_08_02.jpg",
-      "images/pic_08_03.jpg"
+    
     ],
-    "id": 9,
-    "content": "9.html"
+    "id": 18,
+    "content": "18.html"
   },
   {
-    "img": "images/pic_08_01.jpg",
-    "headimg": "",
-    "h5": "2022/08 文／曹殿萍（心臟血管內科主任）",
-    "title": "從「心」出發之血糖問題",
-    "link": "subfolder202201_12/TNews_07_1.jpg",
-    "footerImages": [
-      "images/pic_08_01_01.jpg"
+    "img": "images/pic_17.jpg",
+    "headimg": "images/pic_17_1.jpg",
+    "h5": "2022/08 文/劉復康（復健醫學部主任）",
+    "title": "下背痛該怎麼辦？",
+    "link": "下背痛該怎麼辦？",
+    "footerImages": [    
     ],
-    "id": 8,
-    "content": "8.html"
+    "id": 17,
+    "content": "17.html"
+  },
+  {
+    "img": "images/pic_16.jpg",
+    "headimg": "images/pic_16_1.jpg",
+    "h5": "2022/08 文/蔡世澤（新陳代謝科兼營養治療科主任）",
+    "title": "糖尿病藥物胰島素的治療趨勢",
+    "link": "糖尿病藥物胰島素的治療趨勢",
+    "footerImages": [    
+    ],
+    "id": 16,
+    "content": "16.html"
+  },
+  {
+    "img": "images/pic_15.jpg",
+    "headimg": "images/pic_15_1.jpg",
+    "h5": "2022/09 文/陳奕賓（營養治療科營養師）",
+    "title": "外食挑得巧，血糖免煩惱",
+    "link": "外食挑得巧，血糖免煩惱",
+    "footerImages": [    
+    ],
+    "id": 15,
+    "content": "15.html"
+  },
+  {
+    "img": "images/pic_14.jpg",
+    "headimg": "images/pic_14_1.jpg",
+    "h5": "2022/08 文/張芷穎（藥學部藥師）",
+    "title": "維持漂亮血糖曲線的胰島素",
+    "link": "維持漂亮血糖曲線的胰島素",
+    "footerImages": [
+    
+    ],
+    "id": 14,
+    "content": "14.html"
+  },
+  {
+    "img": "images/pic_08_02.jpg",
+    "headimg": "images/pic_08.jpg",
+    "h5": "2022/08 文/黃建龍（心臟血管內科主治醫師）",
+    "title": "血管支架如何選？了解冠狀動脈支架治療新況",
+    "link": "血管支架如何選？了解冠狀動脈支架治療新況",
+    "footerImages": [
+
+      "images/pic_08_03.jpg"
+    ],
+    "id": 13,
+    "content": "13.html"
+  },
+  {
+    "img": "images/pic_12.jpg",
+    "headimg": "images/pic_12.jpg",
+    "h5": "2022/08 文/陽厚生（心臟重建科主任兼心臟血管外科主治醫師)/洪家椿（心臟血管外科醫師）",
+    "title": "冠狀動脈繞道手術的長期治療現況",
+    "link": "冠狀動脈繞道手術的長期治療現況",
+    "footerImages": [
+      "images/pic_12_1.jpg","images/pic_12_2.jpg","images/pic_12_3.jpg"
+    ],
+    "id": 12,
+    "content": "12.html"
+  },
+  {
+    "img": "images/pic_11.jpg",
+    "headimg": "images/pic_11_1.jpg",
+    "h5": "2022/08 文/鄧鐘泉（神經內科主任）",
+    "title": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
+    "link": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
+    "footerImages": [
+    ],
+    "id": 11,
+    "content": "11.html"
+  },
+  {
+    "img": "images/pic_10.jpg",
+    "headimg": "",
+    "h5": "2022/08 文/陳奕賓（營養治療科營養師）",
+    "title": "不想忘記你，預防失智怎麼吃",
+    "link": "不想忘記你，預防失智怎麼吃",
+    "footerImages": [
+    ],
+    "id": 10,
+    "content": "10.html"
   },
   {
     "img": "images/pic_02.jpg",
     "headimg": "",
     "h5": "2022/02 文/蔡世澤(新陳代謝科暨營養治療科主任)",
     "title": "胰島素治療選擇多 使用更方便,兼顧空腹與餐後血糖 降低夜間低血糖風險",
-    "link": "subfolder202201_12/TNews_02_1.jpg",
+    "link": "胰島素治療選擇多 使用更方便,兼顧空腹與餐後血糖 降低夜間低血糖風險",
     "footerImages": [],
-    "id": 7,
-    "content": "7.html"
+    "id": 9,
+    "content": "9.html"
   },
   {
     "img": "images/pic_01.jpg",
     "headimg": "",
     "h5": "2022/02 文/李文齡(新陳代謝科主治醫師)",
     "title": "糖尿病四大迷思",
-    "link": "subfolder202201_12/TNews_01_1.jpg",
+    "link": "糖尿病四大迷思",
     "footerImages": [],
-    "id": 6,
-    "content": "6.html"
+    "id": 8,
+    "content": "8.html"
   },
   {
     "img": "images/pic_03.jpg",
     "headimg": "",
     "h5": "2022/02 文/林靜莉(糖尿病門診衛教師)",
     "title": "注射胰島素有一套 下針拔針快 手腕僅靠推藥穩 糖尿病友不再疼痛瘀青",
-    "link": "subfolder202201_12/TNews_03_1.jpg",
+    "link": "注射胰島素有一套 下針拔針快 手腕僅靠推藥穩 糖尿病友不再疼痛瘀青",
     "footerImages": [],
-    "id": 5,
-    "content": "5.html"
+    "id": 7,
+    "content": "7.html"
   },
   {
     "img": "images/pic_04.jpg",
     "headimg": "",
     "h5": "2022/01 文/袁瑋 (精神醫學部主治醫師)",
     "title": "後疫情時代,封(瘋)了的心城開了嗎?",
-    "link": "subfolder202201_12/TNews_04_1.jpg",
+    "link": "後疫情時代,封(瘋)了的心城開了嗎?",
     "footerImages": [],
-    "id": 4,
-    "content": "4.html"
+    "id": 6,
+    "content": "6.html"
   },
   {
     "img": "images/pic_05.jpg",
     "headimg": "",
     "h5": "2022/01 文/陳建成(復健醫學部運動復健科主任)",
     "title": "年終掃除不痠痛 六招讓您神清氣爽",
-    "link": "subfolder202201_12/TNews_05_1.jpg",
+    "link": "年終掃除不痠痛 六招讓您神清氣爽",
+    "footerImages": [],
+    "id": 5,
+    "content": "5.html"
+  },
+  {
+    "img": "images/pic_03_1.jpg",
+    "headimg": "",
+    "h5": "2022/02 文/何青吟(耳鼻喉部主任級主治醫師)",
+    "title": "頭痛真的只是頭痛嗎?認識鼻及鼻竇疾病引起的頭痛",
+    "link": "頭痛真的只是頭痛嗎?認識鼻及鼻竇疾病引起的頭痛",
+    "footerImages": [],
+    "id": 4,
+    "content": "4.html"
+  },
+  {
+    "img": "images/pic_04_1.jpg",
+    "headimg": "",
+    "h5": "2022/02 文/林宜璇(家庭暨社區醫學部主治醫師)",
+    "title": "面對戒菸用藥,您有什麼選擇",
+    "link": "面對戒菸用藥,您有什麼選擇",
     "footerImages": [],
     "id": 3,
     "content": "3.html"
@@ -79,7 +179,7 @@
     "headimg": "",
     "h5": "2022/01 文/高法民(營養治療科營養師)",
     "title": "年菜聰明搭 精選調味方式 吃得健康美味無負擔",
-    "link": "subfolder202201_12/TNews_06_1.jpg",
+    "link": "年菜聰明搭 精選調味方式 吃得健康美味無負擔",
     "footerImages": [],
     "id": 2,
     "content": "2.html"
@@ -89,7 +189,7 @@
     "headimg": "",
     "h5": "2022/01 文/陳奕賓(營養治療科營養師)",
     "title": "選對點心,輕鬆過年好放心",
-    "link": "subfolder202201_12/TNews_07_1.jpg",
+    "link": "選對點心,輕鬆過年好放心",
     "footerImages": [],
     "id": 1,
     "content": "1.html"

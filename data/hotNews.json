@@ -4,7 +4,7 @@
     "headimg": "",
     "h5": "2022/09 文／心臟醫學中心提供",
     "title": "本院舉辦2022海峽兩岸心臟瓣膜論壇",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "本院舉辦2022海峽兩岸心臟瓣膜論壇",
     "footerImages": [],
     "id": 10,
     "content": "10.html"
@@ -14,7 +14,7 @@
     "headimg": "",
     "h5": "2022/06 文／編輯部 資料提供／心臟醫學中心 ",
     "title": "本院舉辦2022台北瓣膜高峰視訊論壇  來自16國重量級大師空中相會",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "本院舉辦2022台北瓣膜高峰視訊論壇  來自16國重量級大師空中相會",
     "footerImages": [
       "images/pic_06_2_1.jpg"
     ],
@@ -26,7 +26,7 @@
     "headimg": "",
     "h5": "文／編輯部 資料提供／心臟醫學中心",
     "title": "本院舉辦2022心衰竭照護最新趨勢研討會",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "本院舉辦2022心衰竭照護最新趨勢研討會",
     "footerImages": [],
     "id": 8,
     "content": "8.html"
@@ -36,7 +36,7 @@
     "headimg": "",
     "h5": "2022/02 資料提供/遠距暨國際醫療中心,心臟血管內科 文/編輯部 ",
     "title": "接種新冠肺炎疫苗爆心肌炎命危 本院醫療團隊成功救治越南台商",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "接種新冠肺炎疫苗爆心肌炎命危 本院醫療團隊成功救治越南台商",
     "footerImages": [
       "images/pic_01.jpg"
     ],
@@ -48,7 +48,7 @@
     "headimg": "",
     "h5": "2022/04 文／編輯部 資料提供／復健醫學部神經復健科陳思甫主任",
     "title": "本院復健醫學部引進體外震波治療系統  慢性疼痛患者的新選擇",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "本院復健醫學部引進體外震波治療系統  慢性疼痛患者的新選擇",
     "footerImages": [
       "images/pic_401_2.jpg"
     ],
@@ -60,7 +60,7 @@
     "headimg": "",
     "h5": "2022/06 文／編輯部",
     "title": "繪筆傳愛  創辦人蔣宋美齡女士精神永存",
-    "link": "subfolder202201_12/HNews_01_1.jpg",
+    "link": "繪筆傳愛  創辦人蔣宋美齡女士精神永存",
     "footerImages": [],
     "id": 5,
     "content": "5.html"
@@ -70,37 +70,17 @@
     "headimg": "",
     "h5": "2022/02 文/張嘉侃(兒童醫學部主任)",
     "title": "嬰兒時期的心臟雜音 父母不必過度驚慌",
-    "link": "subfolder202201_12/HNews_02_1.jpg",
+    "link": "嬰兒時期的心臟雜音 父母不必過度驚慌",
     "footerImages": [],
     "id": 4,
     "content": "4.html"
-  },
-  {
-    "img": "images/pic_03.jpg",
-    "headimg": "",
-    "h5": "2022/02 文/何青吟(耳鼻喉部主任級主治醫師)",
-    "title": "頭痛真的只是頭痛嗎?認識鼻及鼻竇疾病引起的頭痛",
-    "link": "subfolder202201_12/HNews_03_1.jpg",
-    "footerImages": [],
-    "id": 3,
-    "content": "3.html"
-  },
-  {
-    "img": "images/pic_04.jpg",
-    "headimg": "",
-    "h5": "2022/02 文/林宜璇(家庭暨社區醫學部主治醫師)",
-    "title": "面對戒菸用藥,您有什麼選擇",
-    "link": "subfolder202201_12/HNews_04_1.jpg",
-    "footerImages": [],
-    "id": 2,
-    "content": "2.html"
   },
   {
     "img": "images/pic_05.jpg",
     "headimg": "",
     "h5": "2022/01 資料提供/眼科部 文/編輯部",
     "title": "為救視力急返台  隔離期不耽誤救治黃金期 本院醫療團隊全副武裝搶救視網膜剝離台商",
-    "link": "subfolder202201_12/HNews_04_1.jpg",
+    "link": "為救視力急返台  隔離期不耽誤救治黃金期 本院醫療團隊全副武裝搶救視網膜剝離台商",
     "footerImages": [],
     "id": 1,
     "content": "1.html"
