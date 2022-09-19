@@ -23,7 +23,7 @@
         </div>
         
         <div class="search">
-            <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <input type="search" id="search-value" placeholder="Search"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
         </div>
         <div id="hamburger">
             <div class="hamT"></div>
@@ -49,9 +49,6 @@
                  data-size="small"  
                  data-share="true">
             </div>
-          
-          </body>
-
         <nav>
             <ul>
                 <li><a href="#" class="action">醫訊首頁</a></li>
@@ -64,18 +61,30 @@
     </header>
     <div id="news" class="contanier">
         <ul id=menu>
-            <li><a href="https://www.facebook.com/sharer.php?u=https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank">
-                <i class="fa-brands fa-facebook-square fa-2x" style="color:rgb(188, 192, 200)"></i>
-            </a>
-            <li> <a href="http://line.naver.jp/R/msg/text/?https://medical_info.chgh.org.tw/#" target="_blank">
-                <i class="fa-brands fa-line fa-2x" style="color:rgb(188, 192, 200)"></i>
-            </a>
-            <li><a href="http://instagram.com/sharer.php?u=https://medical_info.chgh.org.tw/#" target="_blank">
-                <i class="fa-brands fa-instagram-square fa-2x" style="color:rgb(188, 192, 200)"></i>
-            <li><a href="https://twitter.com/share?text=振興醫訊電子報&url=https://medical_info.chgh.org.tw/#">
-                <i class="fa-brands fa-twitter-square fa-2x" style="color:rgb(188, 192, 200)"></i>
-            </a>
-            </ul>
+            <li>
+                <a href="https://www.facebook.com/sharer.php?u=https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank">
+                    <i class="fa-brands fa-facebook-square fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://line.naver.jp/R/msg/text/?https://medical_info.chgh.org.tw/#" target="_blank">
+                    <i class="fa-brands fa-line fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://instagram.com/sharer.php?u=https://medical_info.chgh.org.tw/#" target="_blank">
+                    <i class="fa-brands fa-instagram-square fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/share?text=振興醫訊電子報&url=https://medical_info.chgh.org.tw/#">
+                    <i class="fa-brands fa-twitter-square fa-2x"></i>
+                </a>
+            </li>
+            <div class="share">
+                分享
+            </div>
+        </ul>
         <div class="row align-items-lg-center">
             <div class="col-12 col-sm-12 col-lg-6">
                 <!--  -->
@@ -204,5 +213,16 @@
 </html>
 <script src="js/bootstrap.js"></script>
 <script src="js/design.js"></script>
+<script>
+    document.getElementsByClassName("share")[0].addEventListener("click",function(){
+        let menu = document.getElementById("menu");
+        if(menu.style.right == "-3em" || menu.style.right == ""){
+            menu.style.right = 0;
+        }else{
+            menu.style.right = "-3em";
+
+        }
+    })
+</script>
 
 

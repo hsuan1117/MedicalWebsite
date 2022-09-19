@@ -52,7 +52,7 @@ header .search input{
 header .search #search-btn{
     width: 30px;
     height: 30px;
-    background-color: #BCC0C8;
+    background-color: #BCC0C8!important;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -62,27 +62,30 @@ header .search #search-btn{
     right: 1em;
 }
 header #hamburger{
-    width: 2em;
-    height: 1em;
+    /* width: 2em; */
+    width: 100%;
+    height: 2.4em;
     position: absolute;
-    top: calc(90px - 0.5em);
-    right: 1em;
+    top: calc(90px - 1.1em);
+    right: 0em;
+    background-color: rgb(78, 125, 166  );
 }
 header #hamburger *[class^=ham]{
-    width: 100%;
+    width: 2em;
     height: 2px;
     background-color: #BCC0C8;
     position: absolute;
+    right: 1.1em;
     transform-origin: 0 1px;
 }
 header #hamburger .hamT{
-    top: 0;
+    top: 0.7em;
 }
 header #hamburger .hamM{
-    top: calc(0.5em - 1px);
+    top: calc(1.2em - 1px);
 }
 header #hamburger .hamB{
-    bottom: 0;
+    bottom: 0.7em;
 }
 nav{
     display: none;
@@ -117,7 +120,7 @@ nav ul li a.action{
 }
 #news{
     margin-top: 100px;
-    padding: 0 4em 2em;
+    padding: 0 1em 2em;
 }
 #news hr{
     margin: 0.5em 0;
@@ -143,15 +146,43 @@ nav ul li a.action{
 }
 #menu {
     position: fixed;
-    right: 0;
-    top: 35%;
+    right: -3em;
+    top: 62%;
     width: 5em;
     margin-top: -2.5em;
     list-style-type:none;
+    z-index: 100;
   }
-  #menu .a:hover {
-      color:  #C0362C;
-  }
+#menu li a i{
+    color: rgb(188, 192, 200);
+}
+#menu .fa-facebook-square:hover{
+    color: #3B5793;
+}
+#menu .fa-line:hover{
+    color: #00B400;
+}
+#menu .fa-instagram-square:hover{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg,yellow 15%,red 40%,indigo 80%);
+}
+#menu .fa-twitter-square:hover{
+    color: #1C96E8;
+}
+#menu .share{
+    width: 1.5em;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #4E7DA6;
+    color: #FFFFFF;
+    border-radius: 6px 0 0 6px;
+    cursor: pointer;
+}
 footer{
     padding: 2em;
     text-align: center;
@@ -204,5 +235,9 @@ footer{
     nav ul li:hover a{
         color: #a3acb8;
         background-color: #051e2e;
+    }
+    #news{
+        margin-top: 100px;
+        padding: 0 4em 2em;
     }
 }
