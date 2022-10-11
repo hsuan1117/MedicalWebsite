@@ -62,9 +62,9 @@
             <img src="../images/logo-text.jpg" alt="" class="pic-2">
         </a>
     </div>
-    <div class="search">
-        <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-    </div>
+    <form action="/search" class="search">
+        <input type="search" id="search-value" name="q"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+    </form>
     <div id="hamburger">
         <div class="hamT"></div>
         <div class="hamM"></div>
@@ -117,7 +117,7 @@
         <div>
             <a style="font-size: 18pt;cursor: pointer;color:#BCC0C8;" href="https://www.facebook.com/sharer.php?u=${link|encoded}" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
             <a style="font-size: 18pt;cursor: pointer;color:#a1abc0;" href="http://instagram.com/sharer.php?u=${link|encoded}=${title}" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-            <a style="font-size: 18pt;cursor: pointer;color:#647890;" href="http://line.naver.jp/R/msg/text/?${link}" target="_blank"><i class="fa-brands fa-line"></i></a>
+            <a style="font-size: 18pt;cursor: pointer;color:#647890;" href="http://line.naver.jp/R/msg/text/?${link|encoded}" target="_blank"><i class="fa-brands fa-line"></i></a>
             <a style="font-size: 18pt;cursor: pointer;color:#515f73;" href="https://twitter.com/share?text=${title}&url=${link}" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
         </div>
     </div>
@@ -170,12 +170,18 @@
         } else if (currentPage === totalPage) {
             $(`#btn_nextPage`).addClass('disabled')
         }
+        makePagination()
     }
 
     function makePagination() {
-        for (let i = totalPage; i > 0; i--)
+        // 向下取整 Math.floor(currentPage/10) * 10 + 1 ~ Math.round(currentPage/10) * 10
+        const bottomPage = Math.floor((currentPage - 1) / 10) * 10 + 1
+        let topPage = Math.ceil(currentPage / 10) * 10
+        if(topPage > totalPage) topPage = totalPage
+        $(".pg").remove()
+        for (let i = topPage; i >= bottomPage; i--)
             $('#btn_previousPage').after(
-                $(`<li class="page-item ${i === currentPage ? 'active' : ''}" id="jumpPage-${i}" onclick="jumpPage(${i})"><div class="page-link" href="#">${i}</div></li>`)
+                $(`<li class="pg page-item ${i === currentPage ? 'active' : ''}" id="jumpPage-${i}" onclick="jumpPage(${i})"><div class="page-link" href="#">${i}</div></li>`)
             );
     }
 

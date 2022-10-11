@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="熱門活動：振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="熱門活動,振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <title>搜尋 | 振興醫訊</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #hot {
+            margin-top: 120px;
+        }
+
+        #hot .row {
+            --bs-gutter-x: 0;
+        }
+
+        #hot .col-12 {
+            margin: 1.5em auto;
+            padding: 1em;
+        }
+
+        #hot img {
+            width: 100%;
+        }
+
+        #hot h5 {
+            font-size: 0.8em;
+            color: gray;
+            text-align: center;
+        }
+
+        #hot .bar {
+            width: 100%;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #hot .bar span {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            margin: 0 0.1em;
+            background-color: #DDD;
+            font-family: sans-serif;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <label for="search-value" class="sr-only"></label>
+    <div class="h-[80px] w-full px-4 flex justify-between items-center">
+        <a href="https://www.chgh.org.tw/" target="_blank" class="flex items-center my-auto h-full gap-2">
+            <img src="../images/logo-pic.gif" alt="" class="h-[60px]">
+            <img src="../images/logo-text.jpg" alt="" class="h-[40px]">
+        </a>
+        <form class="flex" action="/search">
+            <input type="search" id="search-value" class="border" name="q">
+            <button class="h-full bg-[#BCC0C8] px-1 text-white cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass h-full"></i>
+            </button>
+        </form>
+    </div>
+    <div id="hamburger">
+        <div class="hamT"></div>
+        <div class="hamM"></div>
+        <div class="hamB"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">醫訊首頁</a></li>
+            <li><a href="../hotNews">熱門活動</a></li>
+            <li><a href="../topicNews/index.html">健康新知</a></li>
+            <li><a href="../aboutUs/index.html">振興園地</a></li>
+            <li><a href="../videoNews/index.html">影音專區</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="mt-[120px] flex justify-center mb-6">
+    <div class="w-3/5 my-6">
+        <div class="text-4xl text-black font-bold mb-2">搜尋結果： <span id="search-value-text"></span></div>
+        <div id="result" class="flex flex-col gap-2">
+            <div class="text-2xl w-full text-center font-bold" id="status">搜尋中</div>
+        </div>
+    </div>
+</div>
+<footer>
+    地址：112北市北投區振興街45號<br>
+    電話：(02)2826-4400<br>
+    <br>
+    網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
+    <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載"
+       style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
+</footer>
+<script>
+
+</script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/design.js"></script>
+<script>
+    let articlesData = []
+    const typeName = {
+        "hotNews": "熱門活動",
+        "topicNews": "健康新知"
+    }
+    const typeColor = {
+        "hotNews": "bg-[#ed3957]",
+        "topicNews": "bg-[#00A0E9]"
+    }
+    $(async () => {
+        const sp = new URLSearchParams(location.search)
+        const query = sp.get('q')
+        $('#search-value').val(query)
+        $('#search-value-text').text(query)
+
+        let hotNews = await fetch("../data/hotNews.json").then(res => res.json())
+        let topicNews = await fetch("../data/topicNews.json").then(res => res.json())
+
+        hotNews = await Promise.all(hotNews.map(async (news) => {
+            news["content"] = await fetch(`../hotNews/data/${news.content}`).then(res => res.text())
+            news["type"] = "hotNews"
+            return news;
+        }))
+
+        topicNews = await Promise.all(topicNews.map(async (news) => {
+            news["content"] = await fetch(`../topicNews/data/${news.content}`).then(res => res.text())
+            news["type"] = "topicNews"
+            return news;
+        }))
+
+        articlesData = [...hotNews, ...topicNews]
+
+        let searchResult = articlesData.filter((article) => {
+            return article?.title?.includes(query) || article?.content?.includes(query) || article?.h5?.includes(query)
+        })
+
+        searchResult.forEach(result => {
+            $("#result").append(
+                `<a class="border w-full rounded-xl p-4 cursor-pointer hover:shadow-lg" href="../page.html?type=${result.type}&id=${result.id}" target="_blank">
+                    <div class="px-2 py-1 ${typeColor[result.type]} text-white rounded-2xl text-sm w-fit">${typeName[result.type]}</div>
+                    <div class="mt-2 text-3xl font-bold">${result.title}</div>
+                    <div class="text-md text-gray-500">${result.h5}</div>
+                </a>`
+            )
+        })
+        console.log(searchResult.length)
+        if(searchResult.length === 0 ){
+            $("#status").text("無相關資料")
+        } else {
+            $("#status").text("")
+        }
+
+    })
+</script>
+</body>
+</html>
