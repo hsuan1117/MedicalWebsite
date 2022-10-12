@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
 </head>
+<style>
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 247, 248, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+</style>
 <body>
     
     <header>
@@ -157,6 +177,30 @@
         <div class="bammer-top mt-5 mb-3">
             <i class="fa-brands fa-slack"></i>&nbsp2022/10/01
         </div>
+        <!-- 煙火開始 -->
+                <header class="hero">
+                    <!-- 白底方格 -->
+                    <div class="banner">
+
+                        <!-- 開啟按鈕 -->
+                        <button class="btn modal-btn">
+                              open modal
+                        </button>
+                    </div>
+                    <div class="modal-overlay">
+                        <!-- modal開啟後之白底方格 -->
+                        <div class="modal-container">
+                            <video src="images/1080548507-preview.mp4"></video>
+                            <!-- modal內容 -->
+                            <!-- 關閉按鈕 -->
+                            <button class="close-btn">
+                                <!-- 使用Font Awesome的Icon -->
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+             <!-- 煙火結束 -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
                 <img src="images/TPnews.jpg" alt="" class="d-block w-100">
@@ -225,6 +269,16 @@
 
         }
     })
+
+    const modalBtn = document.querySelector(".modal-btn"); 
+    const closeBtn = document.querySelector(".close-btn");
+    const modal = document.querySelector(".modal-overlay");
+    modalBtn.addEventListener('click',function(){
+    modal.classList.add("open-modal");
+});
+    closeBtn.addEventListener('click',function(){
+    modal.classList.remove("open-modal");
+});
 </script>
 
 
