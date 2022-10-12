@@ -180,6 +180,7 @@
     let currentPage = 1
     let totalPage = 0
     let articlesData = {}
+    const sp = new URLSearchParams(location.search)
 
     function nextPage() {
         $(`#jumpPage-${currentPage}`).removeClass('active')
@@ -252,6 +253,12 @@
                     item.cards = data.filter((t) => t.type === item.id)
                     return item
                 })
+
+                if(sp.get('id')) {
+                    console.log(type)
+                    type = type.filter(a=>a.id === Number(sp.get('id')))
+                }
+
                 articlesData = type.sort((a, b) => b.id - a.id)
                 totalPage = Math.ceil(articlesData.length / 10)
                 makePagination()
