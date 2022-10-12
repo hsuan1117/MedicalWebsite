@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="振興園地：振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="振興園地,振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <title>振興園地 | 振興醫訊</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #about {
+            margin-top: 20px;
+        }
+
+        #about h4 {
+            padding-left: 1.1em;
+            cursor: pointer;
+            background-color: rgb(243, 231, 208);
+            margin: 6px;
+            font-weight: bold;
+            color: rgb(135, 25, 0);
+        }
+
+        #about h6 {
+            padding-left: 1.1em;
+            font-weight: bold;
+            color: rgb(14, 50, 70);
+        }
+
+        #about h3 .arrow {
+            display: inline-block;
+        }
+
+        #about p {
+            text-align: justify;
+            padding: 1em;
+            text-indent: 32px;
+        }
+
+        #about .row {
+            --bs-gutter-x: 0;
+        }
+
+        #about .contents {
+            transition: all 500ms ease;
+            transform-origin: 50% 0;
+        }
+
+        #about .col-12 {
+            padding: 1em;
+        }
+
+        #about .col-md-4 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #about .accordion-button {
+            background-color: rgb(227, 234, 241);
+        }
+
+        .pic {
+            width: auto;
+            overflow: hidden;
+        }
+
+        .pic img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        .pic img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        @media only screen and (min-width: 768px) {
+            #about .col-md-4 img {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="https://www.chgh.org.tw/" target="_blank">
+            <img src="../images/logo-pic.gif" alt="" class="pic-1">
+            <img src="../images/logo-text.jpg" alt="" class="pic-2">
+        </a>
+    </div>
+    <div class="search">
+        <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+    </div>
+    <div id="hamburger">
+        <div class="hamT"></div>
+        <div class="hamM"></div>
+        <div class="hamB"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">醫訊首頁</a></li>
+            <li><a href="../hotNews/index.html">熱門活動</a></li>
+            <li><a href="../topicNews/index.html">健康新知</a></li>
+            <li><a href="#" class="action">振興園地</a></li>
+            <li><a href="../videoNews/index.html">影音專區</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="about" class="container">
+    <div class="row">
+        <h2 class="col-12"></h2><!--可以寫上主題分類-->
+        <div class="accordion accordion-flush" id="myAccordion" style="margin:40px 0">
+        </div>
+    </div>
+</div>
+
+<div class="w-100 d-flex justify-content-center">
+    <ul class="pagination">
+        <li class="page-item" id="btn_previousPage">
+            <div class="page-link" onclick="previousPage()">上一頁</div>
+        </li>
+
+        <li class="page-item" id="btn_nextPage">
+            <div class="page-link" href="#" onclick="nextPage()">下一頁</div>
+        </li>
+    </ul>
+</div>
+
+<footer>
+    地址：112北市北投區振興街45號<br>
+    電話：(02)2826-4400<br>
+    <br>
+    網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
+    <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載"
+       style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
+</footer>
+</body>
+
+<template id="accordion-container">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse${i}">
+                <h6>${title}<br><sub>${description}</sub></h6>
+            </button>
+        </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
+        <div id="collapse${i}" class="accordion-collapse collapse ${isFirst}" data-bs-parent="#myAccordion">
+            <div class="container" id="about_${i}">
+                <div class="row" id="about_container_${i}">
+                    ${children}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="card_body">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="pic"><img class="card-img-top" src="${img}">
+                <p class="card text">
+                    ${content}
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+</html>
+
+<script src="../js/bootstrap.js"></script>
+<script src="../js/design.js"></script>
+
+<script>
+    let currentPage = 1
+    let totalPage = 0
+    let articlesData = {}
+
+    function nextPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage++;
+        initPage()
+    }
+
+    function previousPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage--;
+        initPage()
+    }
+
+    function jumpPage(page) {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage = page
+        initPage()
+    }
+
+    async function initPage() {
+        $('#myAccordion').empty()
+        $(`#btn_previousPage`).removeClass('disabled')
+        $(`#btn_nextPage`).removeClass('disabled')
+
+        for (const article of articlesData.slice((currentPage - 1) * 9, currentPage * 9)) {
+            const i = articlesData.slice((currentPage - 1) * 9, currentPage * 9).indexOf(article);
+            const cards = (await Promise.all(article.cards.map(async (card, j) => {
+                return $('#card_body').html()
+                    .replace('${img}', card.img)
+                    .replace(/\${i}/g, j)
+                    .replace('${content}', await (await fetch("data/" + card.id + ".html")).text())
+            }))).join("")
+            const container = $($('#accordion-container').html()
+                .replace(/\${title}/g, article.title)
+                .replace(/\${i}/g, article.id)
+                .replace(/\${isFirst}/g, i === 0 ? 'show' : '')
+                .replace(/\${description}/g, article.description)
+                .replace(/\${children}/g, cards)
+            )
+            $('#myAccordion').append(container)
+        }
+        $(`#jumpPage-${currentPage}`).addClass('active')
+        location.href = '#'
+
+        if (currentPage === 1) {
+            $(`#btn_previousPage`).addClass('disabled')
+        }
+        if (currentPage === totalPage) {
+            $(`#btn_nextPage`).addClass('disabled')
+        }
+        makePagination()
+    }
+
+    function makePagination() {
+        // 向下取整 Math.floor(currentPage/10) * 10 + 1 ~ Math.round(currentPage/10) * 10
+        const bottomPage = Math.floor((currentPage - 1) / 10) * 10 + 1
+        let topPage = Math.ceil(currentPage / 10) * 10
+        if(topPage > totalPage) topPage = totalPage
+        $(".pg").remove()
+        for (let i = topPage; i >= bottomPage; i--)
+            $('#btn_previousPage').after(
+                $(`<li class="pg page-item ${i === currentPage ? 'active' : ''}" id="jumpPage-${i}" onclick="jumpPage(${i})"><div class="page-link" href="#">${i}</div></li>`)
+            );
+    }
+
+    $(() => {
+        $.getJSON('../data/aboutUs.json', (data) => {
+            $.getJSON('../data/aboutUsType.json', (type) => {
+                type = type.map((item) => {
+                    item.cards = data.filter((t) => t.type === item.id)
+                    return item
+                })
+                articlesData = type.sort((a, b) => b.id - a.id)
+                totalPage = Math.ceil(articlesData.length / 10)
+                makePagination()
+                initPage()
+            })
+        })
+    })
+
+    function downloadPDF(link) {
+        $("#downloadFrame").attr('src', link)
+    }
+
+</script>
