@@ -110,11 +110,13 @@
     let articlesData = []
     const typeName = {
         "hotNews": "熱門活動",
-        "topicNews": "健康新知"
+        "topicNews": "健康新知",
+        "aboutUs": "振興園地",
     }
     const typeColor = {
         "hotNews": "bg-[#ed3957]",
-        "topicNews": "bg-[#00A0E9]"
+        "topicNews": "bg-[#00A0E9]",
+        "aboutUs": "bg-[#FFA0E9]",
     }
     $(async () => {
         const sp = new URLSearchParams(location.search)
@@ -124,6 +126,8 @@
 
         let hotNews = await fetch("../data/hotNews.json").then(res => res.json())
         let topicNews = await fetch("../data/topicNews.json").then(res => res.json())
+        let aboutUs = await fetch("../data/aboutUsType.json").then(res => res.json())
+        let aboutUsArticles = await fetch("../data/aboutUs.json").then(res => res.json())
 
         hotNews = await Promise.all(hotNews.map(async (news) => {
             news["content"] = await fetch(`../hotNews/data/${news.content}`).then(res => res.text())
@@ -137,15 +141,30 @@
             return news;
         }))
 
-        articlesData = [...hotNews, ...topicNews]
+        aboutUs = await Promise.all(aboutUs.map(async (news) => {
+            news["content"] = (await Promise.all(aboutUsArticles.filter(a=>a.type === news.id).map(async (a) => {
+                console.log(a)
+                return await fetch(`../aboutUs/data/${a.id}.html`).then(res => res.text())
+            }))).join("")
+            news["h5"] = news["description"]
+            news["type"] = "aboutUs"
+            return news;
+        }))
+        console.log(aboutUs)
+
+        articlesData = [...hotNews, ...topicNews, ...aboutUs]
 
         let searchResult = articlesData.filter((article) => {
             return article?.title?.includes(query) || article?.content?.includes(query) || article?.h5?.includes(query)
         })
 
         searchResult.forEach(result => {
+            let link = `../page.html?type=${result.type}&id=${result.id}`
+            if(result.type === "aboutUs") {
+                link = "../aboutUs/index.html?id=" + result.id
+            }
             $("#result").append(
-                `<a class="border w-full rounded-xl p-4 cursor-pointer hover:shadow-lg" href="../page.html?type=${result.type}&id=${result.id}" target="_blank">
+                `<a class="border w-full rounded-xl p-4 cursor-pointer hover:shadow-lg" href="${link}" target="_blank">
                     <div class="px-2 py-1 ${typeColor[result.type]} text-white rounded-2xl text-sm w-fit">${typeName[result.type]}</div>
                     <div class="mt-2 text-3xl font-bold">${result.title}</div>
                     <div class="text-md text-gray-500">${result.h5}</div>
@@ -153,7 +172,7 @@
             )
         })
         console.log(searchResult.length)
-        if(searchResult.length === 0 ){
+        if (searchResult.length === 0) {
             $("#status").text("無相關資料")
         } else {
             $("#status").text("")
