@@ -11,55 +11,73 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-       #about{
+        #about {
             margin-top: 20px;
         }
-        #about h4{
+
+        #about h4 {
             padding-left: 1.1em;
             cursor: pointer;
             background-color: rgb(243, 231, 208);
             margin: 6px;
             font-weight: bold;
-            color: rgb(135,25,0);
+            color: rgb(135, 25, 0);
         }
-        #about h6{
+
+        #about h6 {
             padding-left: 1.1em;
             font-weight: bold;
-            color: rgb(14,50,70);
+            color: rgb(14, 50, 70);
         }
-        #about h3 .arrow{
+
+        #about h3 .arrow {
             display: inline-block;
         }
+
         #about p {
             text-align: justify;
             padding: 1em;
             text-indent: 32px;
         }
-        #about .row{
+
+        #about .row {
             --bs-gutter-x: 0;
         }
-        #about .contents{
+
+        #about .contents {
             transition: all 500ms ease;
             transform-origin: 50% 0;
         }
-        #about .col-12{
+
+        #about .col-12 {
             padding: 1em;
         }
-        #about .col-md-4{
+
+        #about .col-md-4 {
             padding: 10px;
             text-align: center;
         }
-        #about .accordion-button{
-            background-color:rgb(227, 234, 241);
+
+        #about .accordion-button {
+            background-color: rgb(227, 234, 241);
         }
-        .pic {width:auto;overflow:hidden;
+
+        .pic {
+            width: auto;
+            overflow: hidden;
         }
-        .pic img {transform:scale(1,1);transition: all 1s ease-out;
+
+        .pic img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
         }
-        .pic img:hover {transform:scale(1.2,1.2);
+
+        .pic img:hover {
+            transform: scale(1.2, 1.2);
         }
-        
+
         @media only screen and (min-width: 768px) {
             #about .col-md-4 img {
                 width: 100% !important;
@@ -69,376 +87,188 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="https://www.chgh.org.tw/" target="_blank">
-                <img src="../images/logo-pic.gif" alt="" class="pic-1">
-                <img src="../images/logo-text.jpg" alt="" class="pic-2">
-            </a>
-        </div>
-        <div class="search">
-            <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-        </div>
-        <div id="hamburger">
-            <div class="hamT"></div>
-            <div class="hamM"></div>
-            <div class="hamB"></div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">醫訊首頁</a></li>
-                <li><a href="../hotNews/index.html">熱門活動</a></li>
-                <li><a href="../topicNews/index.html">健康新知</a></li>
-                <li><a href="#" class="action">振興園地</a></li>
-                <li><a href="../videoNews/index.html">影音專區</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="about" class="container">
-        <div class="row">
-            <h2 class="col-12"></h2><!--可以寫上主題分類-->            
-            <div class="accordion accordion-flush" id="myAccordion" style="margin:40px 0">
-                        
-        <!--項目開始-->
-         <div class="accordion-item">
-            <h2 class="accordion-header" id="heading4">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                    <h6>本院於9月1日舉辦55週年院慶典禮(一)<br><sub>文／編輯部  資料提供／總務室、人事室
-                        </sub></h6></button>                                    
-            </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-            <div id="collapse6" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">                      
-                <div class="container" id="about">
-                   <div class="row">
-                      <div class="col-md-4">
-                           <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_06_1.jpg" >
-                            <p class="card text">
-                                振興醫院55歲了，在這值得慶祝的時刻，本院於民國111年9月1日上午舉辦簡單溫馨的慶祝典禮，典禮假第二醫療大樓國際會議中心舉辦，無法到場的同仁則透過線上會議方式，同步觀賞院慶典禮。
-                            </p>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_06_2.jpg">
-                            <p class="card text">                                
-                                當天尹衍樑董事長特別出席致詞，以及多位新舊任董事出席，包括：劉榮宏董事暨夫人、李壽東董事、童子賢董事、查岱龍董事、陳幸董事、焦仁和董事暨夫人、丁守中董事、秦舜英榮譽董事、林清波榮譽董事、史美暢榮譽董事。                                
-                            </p>                       
-                   </div>
-                </div>
-            </div>
-                <div class="col-md-4">
-                    <div class="card">
-                           <div class="pic"><img class="card-img-top" src="images/AUpic_06_3.jpg">
-                            <p class="card text">                           
-                                典禮藉由揭幕影片回顧過去一年來的院務，本院承受新冠肺炎疫情的嚴峻考驗，在魏崢院長帶領下，全力配合政府，設置快篩站、降載醫療量能開設專責病房，以因應大量新冠肺炎患者的收治。在全院同仁負重前行之際，本院也推出多項創新服務，包含：振興醫療APP、視訊及電話門診、科技專責病房。<br>
-                                疫情期間，民眾對到院就醫有疑慮，因此本院全面推動「視訊門診」服務，看診不用出門，利用「振興醫療APP」即可輕鬆搞定視訊門診，推出之後服務量居全台之冠，落實遠距守護民眾健康的服務，也是為了因應國際醫療與疫情常態化的需求。<br>
-                                另外，針對有需要領藥的民眾，設立了「藥來速」窗口，疫情期間民眾不用進到醫院裡，讓民眾可以快速繳費領藥外，也減少了感染的風險，不至於因為疫情而中斷穩定的藥物控制。                                
-                            </p>
-                       </div>
-                    </div>
-                </div>
-            </div>
-           </div>
-         </div>
+<header>
+    <div class="logo">
+        <a href="https://www.chgh.org.tw/" target="_blank">
+            <img src="../images/logo-pic.gif" alt="" class="pic-1">
+            <img src="../images/logo-text.jpg" alt="" class="pic-2">
+        </a>
     </div>
-    <!--項目結束-->
-
-     <!--項目開始-->
-     <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4">
-            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                <h6>本院於9月1日舉辦55週年院慶典禮(二)<br><sub>文／編輯部  資料提供／總務室、人事室
-                    </sub></h6></button>                                    
-        </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#myAccordion">                      
-            <div class="container" id="about">
-               <div class="row">
-                  <div class="col-md-4">
-                       <div class="card">
-                        <div class="pic"><img class="card-img-top" src="images/AUpic_05_1.jpg" >
-                        <p class="card text">
-                            不只要服務到民眾，魏崢院長一直以員工是醫院最大的資產為考量，希望為員工創造舒適又安全的工作環境。為了降低醫護人員被感染的風險，減輕工作負擔，同時精確掌握病患的病情，特別引進遠端監控科技偵測隔離病人生理訊號的各項設備，導入醫療輔助照護。同時，更為了解決第一線專責醫護人員擔心感染家人不敢回家的困擾，特別為這些勞苦功高的醫護同仁設置了臨時宿舍及協助安排防疫旅館，讓他們在照護病患之餘無後顧之憂。
-                        </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                        <div class="pic"><img class="card-img-top" src="images/AUpic_05_2.jpg">
-                        <p class="card text">                                
-                            在院慶歡欣時刻，正逢尹衍樑董事長走馬上任，他特別出席並獻上祝福，尹董事長表示過去在本院就醫受到良好照顧，尤其心臟專科發展在魏院長領導下雄踞亞洲，尹董事長也鼓勵各項特色專科繼續努力，放眼未來，他期許振興醫院向世界級醫院邁進。另外，查岱龍董事、秦舜英榮譽董事也獻上祝福，祈願振興院務昌隆。<br>
-                            除了來自董事會的祝福，典禮中透過紀念影片，緬懷本院創辦人蔣夫人的德澤，也讓我們謹記蔣夫人的愛心，期許本院所有同仁都能繼續秉持著良善的創院理念，將蔣夫人的愛心不斷傳頌下去。蔣夫人的這份愛，對當年的小兒麻痺院童來說著實溫暖，我們也特別邀請留院服務滿30年的院童沈靜娟課長致詞。沈課長目前任職電話服務課，當年在院內住院治療一年多，獲得完善的照顧，也透過職訓課程奠定貢獻社會的基礎，她娓娓道來當年的小故事，串起振興超過半世紀的歷史，綿長恆久的時光，振興不斷追求進步，但不變的是那份初衷、那份愛。
-                        </p>                       
-               </div>
-            </div>
-        </div>
-            <div class="col-md-4">
-                <div class="card">
-                       <div class="pic"><img class="card-img-top" src="images/AUpic_05_3.jpg">
-                        <p class="card text">                           
-                            除了院童代表，今年邀請二位退休代表致詞，分別是過去服務於復健醫學部的武而謨先生及創院首位行政主任王海生先生。病人口中的「武老師」，在院內水療室服務超過40年，陪伴許多病人走過水療復健療程，武而謨老師總是精神抖擻的鼓勵病人正向積極，雖然復健成效有高低起伏，但在武老師親切的指導下，病人總能獲得很好的效果。而高齡96歲的王海生先生當年參與本院籌備事務，他分享許多蔣夫人創院早期的小故事，從中深刻體悟蔣夫人創院的精神與堅持，正如宗旨「慈善心．服務情」所揭示，歷經歲月洗禮，振興始終秉持信念，不斷發展進步。<br>
-                            過去一年雖然受到疫情挑戰，但魏崢院長鼓勵同仁團隊合作與創新，無論是臨床服務或行政業務，均積極合作、提升效率，在院慶典禮的尾聲，特別頒發績優單位獎，共有12個單位受到表揚，謝謝他們在如此困難的時刻，仍努力付出，另外也表揚資深員工，年資10年、20年、30年各由一位代表接受表揚。未來我們仍會秉持初衷，提供優質的醫療服務，並朝向國際化醫院精進，祝振興醫院55歲生日快樂！
-                        </p>
-                   </div>
-                </div>
-            </div>
-        </div>
-       </div>
-     </div>
-</div>
-<!--項目結束-->
-
-    <!--項目開始-->
-         <div class="accordion-item">
-            <h2 class="accordion-header" id="heading4">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                    <h6>走過感恩與成長的歲月  振興院童話當年<br><sub>文／呂建和（客服中心高專）、吳佳真（編輯）</sub></h6></button>                                    
-            </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#myAccordion">                      
-                <div class="container" id="about">
-                   <div class="row">
-                      <div class="col-md-4">
-                           <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_04_1.jpg" >
-                            <p class="card text">
-                                1967年，本院創辦人蔣夫人宋美齡女士體恤國內成千上萬因罹患小兒麻痺而成為殘障的兒童亟待醫治與復健，因此當時雖然國內物資缺乏，仍毅然決然創辦財團法人振興復健醫學中心，提供免費醫治、教學、復健與職能訓練。1991年，由於小兒麻痺口服疫苗之全面實施，國內小兒麻痺幾已消失，振興轉型為綜合醫院。為了緬懷蔣夫人德澤，邀請當時於振興復健醫學中心創院時期員工及受惠院童，一起感恩蔣夫人創立振興的經過與在振興成長的歲月。<br>
-                                <strong>蔣夫人的德澤給了我用雙腳走路的自由</strong>
-                                梁文章脫掉腿上的支架和鞋子，二隻腳明顯大小一不，右邊小兒麻痺的腳不像大人的腳，軟弱無力的狀態倒像是幼兒尚未學步的腳，他指著腳背和側邊二道長達十公分蜈蚣般凹凸不平的疤痕，回憶起他四十多年前那段如疤痕的難以抹滅的振興歲月。<br>
-                                罹患小兒麻痺的梁文章，直到上小學之前都是在地上爬，後來因為要上小學，母親拿了一支木棍讓他撐起身體，柱著一拐一拐從這個村莊走到另一個村莊，家裡到學校的距離大約要走三、四公里，而這段距離梁文章走走停停的，不時需要停下來休息再走，比起正常的小朋友，要花費至少二倍以上的時間。大梁文章沒幾歲的哥哥，看到弟弟這麼辛苦，因此就想到用家裡的那台破腳踏車載他，但哥哥沒想到的是，其實他自己也很小，根本就載不動弟弟。<br>
-                                梁文章的父親在他很小的時候便過世，母親一個人種田要養三個小孩實在辛苦，生活都已經很艱難了，深怕沒能給罹患小兒麻痺的梁文章更多照顧，她常常覺得虧欠這個小孩，「我母親是因為我才改嫁的！」<br>
-                                後來，梁文章一家隨著空軍退役的繼父舉家搬遷至板橋，因為繼父聽同袍說振興有提供小兒麻痺治療，原本以為沒有收治大朋友，抱著姑且一試詢問，沒想到振興剛好開辦了青年班，當時年方十八歲的梁文章，開啟了他另一段不同的人生。<br>
-                                梁文章回憶時，眼睛還閃著淚光，他說以前住在鄉下，當時雖然罹患小兒麻痺，但是缺乏治療的概念，都是在家裡養著，有點像是放生的感覺，同村的就有六、七個小兒麻痺的小朋友。日後跟著母親回鄉，鄰居看到穿著支架的梁文章不靠拐杖就可以來去自如地走著，深感不可思議，而那些長久關在家裡的小兒麻痺的幼兒同伴看到梁文章的改變都露出一種羨慕又嫉妒的神情。<br> 
-                                梁文章形容自己的個性是「逆來順受」，他說自己成長路上沒有遇到「壞人」，遇到的人都對他很好，他也不覺得自己因外觀受到歧視，但他第一次覺得「小兒麻痺」會受到外界異樣眼光，是發生在他國小時期。當時學校的教務主任非常親切，經常和學生打成一片，他幫梁文章取了個「秘雕」的綽號，起因是梁文章上學都拄著木棍一拐一拐地走路。他聽到這綽號不以為意，也不認為老師在歧視他，同學們也都跟著教務主任喊他「秘雕」。<br>
-                                可是有一次教務主任在走廊上喊他「秘雕」，卻剛好被站在後面的校長聽見，於是教務主任被記了一個大過，「我只是覺得主任很冤枉，我們小時候看布袋戲中的秘雕，只是駝背長得不好看，但我們都覺得他很厲害啊！」後來校長找他去問話，梁文章就解釋說他們都常去教務主任家吃飯，主任對他們很好，於是後來校長才將懲處改為警告，校長事後告誡這位主任，雖然學生本人覺得無所謂，但是為學生取此綽號仍是不妥，梁文章這才意識到原來罹患小兒麻痺是會被人歧視的，不過由於生性樂觀，他還是覺大家都對他很好。<br>     
-                                梁文章來到振興的第一印象就是「漂亮極了！」他原本以為醫院就是冰冰冷冷的建築物，沒想到卻彷彿來到一個大花園，他就像是劉姥姥進大觀園一樣充滿好奇心，反倒減少了來到陌生環境的緊張和害怕。再加上，梁文章說他自己的個性隨和，在振興看到這麼多一樣處境的人，大家都像兄弟姐妹一樣，日子過得算蠻愉快的。<br>
-                            </p>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_04_2.jpg">
-                            <p class="card text">                                
-                                梁文章在振興大約住了一個多月就回家了，因為知道振興的人愈來愈多，而需要住院的病人愈來愈多，因此後來就由哥哥每天騎著腳踏車載著他，一路從板橋江子翠騎過華江橋、再從萬華騎到西松國小等交通車，一星期六天風雨無阻，但他哥哥卻不以為苦，談起這件往事時，梁文章的神情滿是感激。<br>
-                                梁文章來到振興被分配到青年班，是招收國中畢業以上的學員，同期同學中也有多位留院服務。他們在振興的期間，除了治療外，大部份的時間都是參加職訓課程，當時開設的職訓課程種類豐富，例如：鐘錶、雕刻、皮雕、縫紉等，蔣夫人認為小兒麻痺院童即便身體殘疾，但不代表不能對社會有所貢獻，因此開設職訓班培育他們自力更生的能力，不被異樣眼光所束縛住，也能開創屬於自己的人生。<br>
-                                不過梁文章並沒有參與振興所開設的職訓課程，因為他來到振興前就是學做皮鞋的學徒，當初振興並沒有製鞋的班別，但義肢支架室做支架時需要製作一些皮件，當時服務於社會服務課的周麗鐘社工師就幫忙安排他到義肢支架室學習，由於沒有其他學員到支架室，梁文章可說是「only one」。在支架室待了大約半年左右，梁文章出了不少力，因為他本身就是做皮鞋的，師父就放手讓他做，員工們笑稱：「自從他來了，我們多出可以打屁聊天的時間。」<br>
-                                梁文章在振興待了一年左右，期間歷經二次矯正手術，目的是矯正外翻變形的腳盤，他的右腳底部因鎖鋼釘留下約一元硬幣大小傷口，腳背及腳側邊各有一條約十公分大小的蜈蚣狀疤痕。住院期間的醫療費用全免，吃、住、復健、做支架也都免費，當手術完穿上支架站起來的那一刻，一想到不用拄拐杖走路，而且可以走更遠，他幾乎喜極而泣，「我們對蔣夫人真的是感恩戴德！」<br>
-                                談到蔣夫人，梁文章分享一段十分溫馨的往事，也從中看出蔣夫人為小兒麻痺患者真心付出的德澤。當年蔣夫人住在官邸，但只要有空，她會在晚上學員就寢前來探視。一聽到蔣夫人要來探視，大家都會很緊張，有一次蔣夫人不想驚擾大家便悄悄來院，剛好有一位四、五歲的新進院童，由於年紀還小，每天不時哭鬧想家，尤前睡前更是不停歇地哭，當時蔣夫人已經走進房間，助理士想將他抱到別的地方去安撫，蔣夫人卻輕聲地說，「不用不用，給我看看！」蔣夫人就走近他的床邊，俯身將他抱在懷裡，和藹可親地側著頭細細詢問，「你為什麼哭啊？」這位院童抽抽噎噎地說：「爸爸媽媽不要我了！」夫人笑著說：「沒有沒有，爸爸媽媽最愛你了，怎麼會不要你呢？」同時像變魔術般地從皮包裡拿出巧克力，蔣夫人溫柔的說：「這兩個巧克力送你，別再哭了！」後來這位院童躺在蔣夫人的懷裡靜靜地睡著了，蔣夫人從頭到尾都沒有不悅的神情，反倒小心翼翼地抱著這孩子，深怕傷到他那雙被小兒麻痺肆虐而軟弱無力的腿。<br>
-                                另外，每年的聖誕節，蔣夫人都會招待所有的院童去圓山飯店過節，好幾台交通車浩浩蕩蕩地到圓山飯店，不只吃大餐，還可以看李棠華特技團及魔術表演，這是當時一般人都無法享有的待遇，但蔣夫人卻讓這群院童開了眼界。提及這段回憶，梁文章流露口齒留香的神情，他說不只聖誕節有大餐可以吃，平時的伙食就很好，當時他們吃的牛肉都是進口的，一般人家都不容易能吃到，麵條則是伙房自己擀出來的。每年蔣夫人華誕時，大夥都會分到壽桃，而且會加菜，逢年過節也都會加菜，而且菜色常是外面吃不到的，令他無比懷念。<br>
-                                問到他有沒有印象深刻的振興員工，梁文章有點促狹地說：「當然有！」他說當年開刀後的病房是在如今的精神醫學部二樓，社會服務課的周麗鐘社工師當時才二十歲出頭，青春美麗又溫柔，大家都很喜歡她，喊她周阿姨。梁文章笑著說，因為周阿姨長得特別漂亮，所以印象深刻，周阿姨對他們很好，把他們當作是她自己的孩子。梁文章特別強調，「在振興工作的這些阿姨們都有一個共同的信念，夫人給她們的觀念就是要把所有的院童都當成自己的孩子一樣，雖然有時候很嚴格，但都很疼我們！」另外，提到物理治療室的周文博阿姨時，他露出了像小孩子做錯事的表情，「我們最怕她了，她很嚴格、不苟言笑，做治療就是要乖乖地做，不能偷懶！」<br>
-                                
-                            </p>                       
-                   </div>
-                </div>
-            </div>
-                <div class="col-md-4">
-                    <div class="card">
-                           <div class="pic"><img class="card-img-top" src="images/AUpic_04_3.jpg">
-                            <p class="card text">                           
-                                提起手術後的物理治療，梁文章記得很清楚，幫他做治療的是羅幼幼老師，他說羅老師講話慢悠悠的，她經常掛在嘴上的話：「好，沒什麼事，乖乖做，不要怕，不會痛。」平時治療師都是徒手幫他們復健，為了矯正腿部，需要以沙袋壓直，復健專區位於現在二院水療池的位置，當時並沒有如今這麼大的水療池，只有一個像浴缸大小的水療池，拆掉石膏後，為了軟化腳部，添加藥水在水療池內，將雙腳浸泡後，電動馬達一開，水療池的水滾動翻騰，也是很新奇的體驗。<br>
-                                治療過程其實很辛苦，不能奢望每位院童都會乖乖聽話做治療，梁文章回憶起這段辛苦的過程，卻是笑著說，「開刀後要壓沙袋，有位同學很調皮啊！偷偷在其他人復健時添加沙袋，痛的大家哇哇叫，後來他就被罵了。但是當他自己手術後，情況就顛倒過來，大家紛紛幫他加沙袋，沒想到他最早出院，因為他復原最快，因為他的沙袋比其他人更多，腳直得比較快，就比較早出院了！」他說以前在治療時，除了互相打氣加油外，大家也會互相欺負，「快樂也就在這裡！」<br>
-                                調皮的事不只一件，梁文章說他很懷念住院那段快樂的時光，是他人生記憶最深刻的一段。他說在振興吃得好，還常常向照護的阿姨撒嬌，一般院童可以自理時，阿姨們就不會幫忙洗澡，雖然他已經成年，但當時情竇初開，「所以我們就會去借其他院童開刀後的石膏綁在自己腿上，故意請阿姨幫我們洗澡，但她們都知道我們調皮搗蛋，此時奶奶型的護理長龍阿姨就會說，『過來，我幫你洗。』」嚇得他們趕快拆掉石膏，乖乖自己去洗澡。<br>
-                                當梁文章回到振興服務後，開始幫忙製作支架，他說其實很多院童情況很嚴重，印象最深刻的是一位國小一、二年級左右的院童，頸部以下都需要穿著支架，還以頸架支撐頭部，即使那麼嚴重，但他也跟其他院童一樣，穿著支架活蹦亂跳地，拿枴杖到處跑。但是他剛來到振興時，幾乎全身癱軟，甚至無法爬行，這位院童大約住院一～二年，因為嚴重脊椎側彎，也經過多次手術，當時父母送他到振興時，幾乎是束手無策的將他交給振興，梁文章也曾為這位院童製作支架，後來等到他能撐著拐杖行走後，才由父母接回家。<br>
-                                他回到振興工作後，周麗鐘阿姨鼓勵他繼續進修，於是他到復興美工夜間部就讀，白天在振興上班，晚上自己騎著摩托車到永和的學校讀書，後來又到空大進修，可惜結婚生子後，生活比較忙碌，並未完成空大學業。但是梁文章認為振興改變了他的一生，雖然以前他也可以拄著一根木棍翻著腳走路，但十分吃力，行走不久腳就疼痛。來到振興後，他不用靠拐杖就可以自己走路，穿上支架後，可以走得更長、更久，就像他的人生一樣，有了更長遠的未來。如果沒有振興、沒有蔣夫人，他不敢想像自己的人生會是什麼樣。<br>
-                                梁文章說，當時收治的青年班學員也不少，分成甲、乙、丙、丁、戊五班，現在圓中心旁邊的辦公室就是當時他們的教室，他還記得他的教室就位在如今房務課的位置。他提到服務於總務室的陳寶元是他的同班同學，他說陳寶元還曾跟隨蔣夫人學畫，他以略帶驚嘆的語調讚賞這位老同學：「失去雙臂的陳寶元用殘肢夾著筆，寫出來的鋼筆字讓人嘆為觀止！」<br>
-                                而談到他從院童身份轉換成振興員工的契機，梁文章笑了，他說他印象很深刻的是，在振興工作領的第一個月的薪水是5241元，我們不理解當年這個金額大不大，他舉了當年皮鞋工廠學徒一個月的薪水是150元，可見差距。原本梁文章在振興約莫一年的治療結束後就離開了，他去到父親友人在萬華開設的皮鞋工廠擔任學徒，但是不到半年時間，因為有位振興支架室的師傅要離職，當時支架訂單超額，要製作的數量多到堆滿三面牆的架子，遲遲無法完工，廠長深怕耽誤殷殷期盼等待穿上支架的院童們，就邀請梁文章回振興工作。<br>
-                                振興支架室全盛時期有高達18位師傅，每期院童約略有4～500人，從小學到青年班，數量之多可想而知，每一具支架都是由師傅們純手工打造。當年製作支架的機器並非電動，而是需要用腳操控，製作過程的辛苦難以想像，但看到院童穿上支架露出的笑容，師傅們的辛苦就值得了。梁文章臉上的皺紋因為笑意深了，笑意中有感嘆也有驕傲，「那時我還不到二十歲，如今四十多年都過去了！」<br>
-                                訪問末了，梁文章為我們示範皮革裁剪及上膠的過程，此時剛好陽光從窗外的縫隙鑽了進來，斜照在他專注認真的身上，眼眶似乎閃著淚光，他緩緩道來：「夫人的德澤給了我用雙腳走路的自由！」蔣夫人的德澤彷彿那道斜陽，永永遠遠地映照在所有院童的身上，無法抹滅！<br>
-                              
-                         </p>
-                       </div>
-                    </div>
-                </div>
-            </div>
-           </div>
-         </div>
+    <div class="search">
+        <input type="search" id="search-value"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
     </div>
-   <!--項目結束-->
-
-    <!--項目開始-->
-         <div class="accordion-item">
-            <h2 class="accordion-header" id="heading3">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                    <h6>本院配合辦理2022年學齡前兒童整合性社區篩檢<br><sub>文／醫療業務部</sub></h6></button>                                    
-            </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">                      
-                <div class="container" id="about">
-                   <div class="row">
-                      <div class="col-md-4">
-                           <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_03_1.jpg" >
-                            <p class="card text">為了守護社區兒童健康，本院配合台北市政府衛生局於2022年3月17日至4月15日至各社區幼兒園進行學齡前兒童整合性社區篩檢服務。
-                         </p>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                            <div class="pic"><img class="card-img-top" src="images/AUpic_03_2.jpg">
-                            <p class="card text">本院兒童醫學部及牙科主治醫師、耳鼻喉部聽力師、眼科部技術員、護理部及家庭暨社區醫學部之護理師共同組成護兒團隊，至北投、石牌及薇閣三所國小附設幼兒園進行到校篩檢。
-                        </p>                       
-                   </div>
-                </div>
-            </div>
-                <div class="col-md-4">
-                    <div class="card">
-                           <div class="pic"><img class="card-img-top" src="images/AUpic_03_3.jpg">
-                            <p class="card text">因適逢疫情期間，為保護學童及工作人員，團隊人員皆著防疫裝備進行幼兒身體檢查、口腔檢查、聽力檢查及視力檢查，異常個案則協助複診及追蹤，本院每年度皆配合承辦台北市學齡前兒童整合性社區篩檢，落實「慈善心．服務情」的宗旨，守護社區兒童健康。
-                         </p>
-                       </div>
-                    </div>
-                </div>
-            </div>
-           </div>
-         </div>
+    <div id="hamburger">
+        <div class="hamT"></div>
+        <div class="hamM"></div>
+        <div class="hamB"></div>
     </div>
-   <!--項目結束-->
-
-  <!--項目開始-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2">
-                        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                            <h6>本院魏崢院長於農曆除夕及大年初一慰問值班人員<br><sub>文／編輯部&nbsp&nbsp資料提供／總務室</sub></h6></button>                                    
-                    </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">                      
-                        <div class="container" id="about">
-                           <div class="row">
-                              <div class="col-md-4">
-                                   <div class="card">
-                                    <div class="pic"><img class="card-img-top" src="images/AUpic_01_1.jpg" >
-                                    <p class="card text">今年農曆除夕（1月31日）及大年初一（2月1日），魏崢院長體恤仍在工作崗位上盡忠職守的同仁，特別與殷偉賢副院長、陳光國副院長、葉明陽副院長、常傳訓副院長到各單位慰問，感謝他們犧牲闔家團圓時刻，為照護病患盡心盡力，並發放新春紅包，以玆嘉勉。
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                   <div class="pic"><img class="card-img-top" src="images/AUpic_01_2.jpg">
-                                    <p class="card text">每年農曆春節時刻，幾乎家家戶戶闔家團圓吃年夜飯，但在振興的每個角落，都會有值班同仁堅守岡位，為了需要的病人，提供即時的照顧，除了臨床醫療醫事人員，還包括清潔人員、警衛同仁等。
-                                </p>                       
-                           </div>
-                        </div>
-                    </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                   <div class="pic"><img class="card-img-top" src="images/AUpic_01_3.jpg">
-                                    <p class="card text">即使無法與家人相守，但是在除夕夜看見院部長官們到來，大家的臉上都掛著歡樂的笑容，互道恭喜祝福，場面洋溢新年喜氣，魏院長及四位副院長除了感念同仁辛勤，也鼓勵大家今年全力打拼，有同仁的付出與努力，才有振興的進步。</p>
-                               </div> 
-                            </div>   
-                           </div>
-                        </div>
-                   </div>
-             </div>
-         </div>
- <!--項目結束-->
-
- 
-   <!--項目開始-->
-   <div class="accordion-item">
-    <h2 class="accordion-header" id="heading1">
-        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-            <h6>走過廿五年&nbsp振興加護護理訓練疫情下順利結訓<br><sub>文/護理部</sub></h6></button>                                    
-    </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
-    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion">                      
-        <div class="container" id="about">
-           <div class="row">
-              <div class="col-md-4">
-                   <div class="card">
-                    <div class="pic"><img class="card-img-top" src="images/AUpic_02_1.jpg" >
-                    <p class="card text">即使國內新冠疫情緩和又復嚴峻、起伏不定，護理部辦理加護護理訓練班的腳步卻不能停歇，雖然受到疫情及護理人力調度安排等種種因素影響，使得原定2021年10月開訓的計畫延宕，但在所有護理單位主管的支持下，終能在11月中旬順利開辦。這是本院第廿五期加護護理訓練班，每一年、每一期的訓練班，總有著一群滿腔熱血、年輕有為的護理師們，以正向積極的態度、認真把握每一刻學習賦能的機會，並期待在未來躋身重症護理照護服務的行列。
-                 </p>
-              </div>
-           </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                    <div class="pic"><img class="card-img-top" src="images/AUpic_02_2.jpg">
-                    <p class="card text">本次加護護理訓練班之開訓、結訓典禮，魏崢院長、殷偉賢副院長、陳光國副院長、葉明陽副院長、加護中心暨急重症醫療中心李鴻福主任、護理部李作英主任、心臟護理科陳慧玲主任等主管出席，並由殷副院長代表頒發獎金予結訓成績前三名的學員。魏院長特別對受訓學員寄予勉勵，鼓勵學員們珍惜機會、用心學習，也期待他們未來能獨當一面、駕馭各種困難，提供病人及家屬更好的照護品質。護理部李主任也期勉學員，日後能逐漸累積重症照護知識與經驗，於加護病房服務時提供給振興病人與家屬最值得信賴的照護品質。
-                </p>                       
-           </div>
-        </div>
-    </div>
-        <div class="col-md-4">
-            <div class="card">
-                   <div class="pic"><img class="card-img-top" src="images/AUpic_02_3.jpg">
-                    <p class="card text">振興的加護護理訓練是極為專業的進階課程，課程內容含括心臟、肺部呼吸、神經、腸胃道及營養代謝等系統之重大疾病、以及敗血症休克、各重要器官或周邊組織急重症之處置與照護原則，透過振興的醫、藥、護、心理、社工、復健、呼吸治療師等各專科團隊講師們，毫不藏私的一一解說，從生理、藥理之機轉、解剖與生化檢驗指標、基礎心電圖判讀到高階影像等各式疾病之表徵資料解析，到最新醫學實證與經驗法則相互印驗的對症治療等，參訓的每一位護理師們藉由專注聆聽講課、透過課室學習與分組技術訓練的「學中做」、「做中學」體驗學習，終能在為期近三個月的時間內，順利通過各項測驗。
-                 </p>
-               </div>
-            </div>
-        </div>
-    </div>
-   </div>
- </div>
-
-            
-            
-
-           
-               
-       
-
-        <!--項目開始-->
-               
-        <!--項目結束-->
-
-        <!--項目開始-->
-               
-        <!--項目結束--> 
-        <ul class="pagination justify-content-center" style="margin:40px 0">
-                <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">下一頁</a></li>
+    <nav>
+        <ul>
+            <li><a href="../index.html">醫訊首頁</a></li>
+            <li><a href="../hotNews/index.html">熱門活動</a></li>
+            <li><a href="../topicNews/index.html">健康新知</a></li>
+            <li><a href="#" class="action">振興園地</a></li>
+            <li><a href="../videoNews/index.html">影音專區</a></li>
         </ul>
+    </nav>
+</header>
+<div id="about" class="container">
+    <div class="row">
+        <h2 class="col-12"></h2><!--可以寫上主題分類-->
+        <div class="accordion accordion-flush" id="myAccordion" style="margin:40px 0">
+        </div>
     </div>
 </div>
+
+<div class="w-100 d-flex justify-content-center">
+    <ul class="pagination">
+        <li class="page-item" id="btn_previousPage">
+            <div class="page-link" onclick="previousPage()">上一頁</div>
+        </li>
+
+        <li class="page-item" id="btn_nextPage">
+            <div class="page-link" href="#" onclick="nextPage()">下一頁</div>
+        </li>
+    </ul>
 </div>
-</div>
-   
-    <footer>
-        地址：112北市北投區振興街45號<br>
-        電話：(02)2826-4400<br>
-        <br>
-        網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
-        <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載" style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
-    </footer>
-   
+
+<footer>
+    地址：112北市北投區振興街45號<br>
+    電話：(02)2826-4400<br>
+    <br>
+    網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
+    <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載"
+       style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
+</footer>
 </body>
 
+<template id="accordion-container">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse${i}">
+                <h6>${title}<br><sub>${description}</sub></h6>
+            </button>
+        </h2> <!--collapse+號碼--> <!--show只出現在影片1號-->
+        <div id="collapse${i}" class="accordion-collapse collapse ${isFirst}" data-bs-parent="#myAccordion">
+            <div class="container" id="about_${i}">
+                <div class="row" id="about_container_${i}">
+                    ${children}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="card_body">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="pic"><img class="card-img-top" src="${img}">
+                <p class="card text">
+                    ${content}
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
 </html>
- 
+
 <script src="../js/bootstrap.js"></script>
 <script src="../js/design.js"></script>
-<script src="js/data.js"></script>
 
-
-
-<!-- <script src="js/admin.js"></script> -->
 <script>
-    let title = document.getElementsByClassName("title");
-    let contents = document.getElementsByClassName("contents");
-    let i = document.getElementsByClassName("arrow");
-    for (const btn of title) {
-        btn.addEventListener("click",function(){
-            if(contents[this.getAttribute("value")].style.transform == "scaleY(1)" || contents[this.getAttribute("value")].style.transform == ""){
-                contents[this.getAttribute("value")].style.transform = "scaleY(0)";
-                contents[this.getAttribute("value")].style.display = "none";
-                i[this.getAttribute("value")].setAttribute("class","fa-solid fa-caret-right arrow");
-            }else{
-                contents[this.getAttribute("value")].style.display = "block";
-                contents[this.getAttribute("value")].style.transform = "scaleY(1)";
-                i[this.getAttribute("value")].setAttribute("class","fa-solid fa-caret-down arrow");
-            }
-        })
+    let currentPage = 1
+    let totalPage = 0
+    let articlesData = {}
+    const sp = new URLSearchParams(location.search)
+
+    function nextPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage++;
+        initPage()
     }
-    // let imgBig = document.getElementsByClassName("w-100")[0];
-    let imgSmall = document.getElementsByClassName("small");
-    let imgtxt =document.getElementsByClassName("imgtxt")[0];
-    for (const k of imgSmall) {
-        k.addEventListener("click",function(){
-            let imgBig = this.parentNode.parentNode.childNodes[3].childNodes[1];
-            imgBig.setAttribute("src",this.getAttribute("src"));
-            imgtxt.textContent = this.getAttribute("alt");
-        })
+
+    function previousPage() {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage--;
+        initPage()
     }
+
+    function jumpPage(page) {
+        $(`#jumpPage-${currentPage}`).removeClass('active')
+        currentPage = page
+        initPage()
+    }
+
+    async function initPage() {
+        $('#myAccordion').empty()
+        $(`#btn_previousPage`).removeClass('disabled')
+        $(`#btn_nextPage`).removeClass('disabled')
+
+        for (const article of articlesData.slice((currentPage - 1) * 9, currentPage * 9)) {
+            const i = articlesData.slice((currentPage - 1) * 9, currentPage * 9).indexOf(article);
+            const cards = (await Promise.all(article.cards.map(async (card, j) => {
+                return $('#card_body').html()
+                    .replace('${img}', card.img)
+                    .replace(/\${i}/g, j)
+                    .replace('${content}', await (await fetch("data/" + card.id + ".html")).text())
+            }))).join("")
+            const container = $($('#accordion-container').html()
+                .replace(/\${title}/g, article.title)
+                .replace(/\${i}/g, article.id)
+                .replace(/\${isFirst}/g, i === 0 ? 'show' : '')
+                .replace(/\${description}/g, article.description)
+                .replace(/\${children}/g, cards)
+            )
+            $('#myAccordion').append(container)
+        }
+        $(`#jumpPage-${currentPage}`).addClass('active')
+        location.href = '#'
+
+        if (currentPage === 1) {
+            $(`#btn_previousPage`).addClass('disabled')
+        }
+        if (currentPage === totalPage) {
+            $(`#btn_nextPage`).addClass('disabled')
+        }
+        makePagination()
+    }
+
+    function makePagination() {
+        // 向下取整 Math.floor(currentPage/10) * 10 + 1 ~ Math.round(currentPage/10) * 10
+        const bottomPage = Math.floor((currentPage - 1) / 10) * 10 + 1
+        let topPage = Math.ceil(currentPage / 10) * 10
+        if(topPage > totalPage) topPage = totalPage
+        $(".pg").remove()
+        for (let i = topPage; i >= bottomPage; i--)
+            $('#btn_previousPage').after(
+                $(`<li class="pg page-item ${i === currentPage ? 'active' : ''}" id="jumpPage-${i}" onclick="jumpPage(${i})"><div class="page-link" href="#">${i}</div></li>`)
+            );
+    }
+
+    $(() => {
+        $.getJSON('../data/aboutUs.json', (data) => {
+            $.getJSON('../data/aboutUsType.json', (type) => {
+                type = type.map((item) => {
+                    item.cards = data.filter((t) => t.type === item.id)
+                    return item
+                })
+
+                if(sp.get('id')) {
+                    console.log(type)
+                    type = type.filter(a=>a.id === Number(sp.get('id')))
+                }
+
+                articlesData = type.sort((a, b) => b.id - a.id)
+                totalPage = Math.ceil(articlesData.length / 10)
+                makePagination()
+                initPage()
+            })
+        })
+    })
+
+    function downloadPDF(link) {
+        $("#downloadFrame").attr('src', link)
+    }
+
 </script>
