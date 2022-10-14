@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
-    
+    <link rel="stylesheet" herf="css/blindify.css">
+    <script src="http://ajax.googleeapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/query.blindify.min.js"></script>
+    <script src="js/sample.js"></script>
 </head>
 <body>
        <header>
@@ -87,10 +90,6 @@
             </div>
         </ul>
        
-        <div class="col-12">
-            <img src="images/fireworks.jpg" width="100%">
-        </div>
-
         <div class="row align-items-lg-center">
             <div class="col-12 col-sm-12 col-lg-6">
                 <!--  -->
@@ -122,7 +121,7 @@
                   </div>
                 <!--  -->
             </div>
-                <div class="col-12 col-sm-12 col-lg-6 pt-3">
+            <div class="col-12 col-sm-12 col-lg-6 pt-3">
                 <h5 class="text-danger"><b>熱門活動</b></h5>
                <!--  -->
                <hr>
@@ -222,7 +221,21 @@
 <script src="js/design.js"></script>
 <script>
 
-  
+    $(function(){
+        $("#blindify").blindify({
+            //百葉窗方向
+            orientation : "vertical",
+            //指定百葉窗分割數量
+            number()fBlinds: 20,
+            //指定百葉窗特效的撥放速度
+            AnimationSpeed: 2000,
+            //下一張圖片顯示之前的時間
+            delayBetweenSlides: 500,
+            //長條的上下間距
+            gap : 150
+        });
+    });
+
     document.getElementsByClassName("share")[0].addEventListener("click",function(){
         let menu = document.getElementById("menu");
         if(menu.style.right == "-3em" || menu.style.right == ""){
