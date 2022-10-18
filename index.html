@@ -12,8 +12,40 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
     
+    <SCRIPT LANGUAGE="javascript">
+        
+            window.open (announce.html,"newwindow","height=auto,width=400,top=0,left=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no")
+        
+        
+            function openwin(){
+                window.open("announce.html","newwindow","height=auto, width=400,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no")
+            }
+            function openwin(){
+                function get_cookie(name){
+                    &nbsp;
+                    var search=Name + "=" var returnvalue = "";
+                    if(document.cookie.length >0){
+                        offset=document.cookie.indexOf(search)
+                        if(offset!=-1){
+                            offset+=search.length
+                            end = document.cookie.indexOf(";",offset);
+                            if(end==-1)
+                            end=document.cookie.length;
+                            returnvalue=unescape(document.cookie.substring(offset, end))
+                        }
+                    }
+                    return returnvalue;
+                }
+                function loadpopup(){
+                    if(get_cookie("popped")==""){
+                        document.cookie="popped=yes"
+                    }
+                }
+            }
+    </SCRIPT>
 </head>
 <body>
+    <body onload="loadpopup()">
        <header>
         <div class="logo">
             <a href="https://www.chgh.org.tw/" target="_blank">
