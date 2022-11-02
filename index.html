@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
 </head>
 <body onload="loadpopup()">
 <header>
@@ -284,28 +284,10 @@
         document.getElementById("showModal").click()
     }
 
-    function get_cookie(name) {
-        var search = "Name" + "="
-        var returnvalue = "";
-        if (document.cookie.length > 0) {
-            offset = document.cookie.indexOf(search)
-            if (offset != -1) {
-                offset += search.length
-                end = document.cookie.indexOf(";", offset);
-                if (end == -1)
-                    end = document.cookie.length;
-                returnvalue = unescape(document.cookie.substring(offset, end))
-            }
-        }
-        return returnvalue;
-    }
-
-
     function loadpopup() {
-        if (get_cookie("popped") === "") {
-            document.cookie = "popped=yes"
+        if (Cookies.get("popup") == null) {
+            Cookies.set("popup", "1", 1);
             openwin()
-
         }
     }
 </script>
