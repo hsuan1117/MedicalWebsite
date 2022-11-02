@@ -111,11 +111,13 @@
     const typeName = {
         "hotNews": "熱門活動",
         "topicNews": "健康新知",
+        "videoNews": "影音專區",
         "aboutUs": "振興園地",
     }
     const typeColor = {
         "hotNews": "bg-[#ed3957]",
         "topicNews": "bg-[#00A0E9]",
+        "videoNews": "bg-[#00A0E9]",
         "aboutUs": "bg-[#FFA0E9]",
     }
     $(async () => {
@@ -126,6 +128,7 @@
 
         let hotNews = await fetch("../data/hotNews.json").then(res => res.json())
         let topicNews = await fetch("../data/topicNews.json").then(res => res.json())
+        let videoNews = await fetch("../data/videoNews.json").then(res => res.json())
         let aboutUs = await fetch("../data/aboutUsType.json").then(res => res.json())
         let aboutUsArticles = await fetch("../data/aboutUs.json").then(res => res.json())
 
@@ -141,6 +144,12 @@
             return news;
         }))
 
+        videoNews = await Promise.all(videoNews.map(async (news) => {
+            news["type"] = "videoNews"
+            news["h5"] = news["description"]
+            return news;
+        }))
+
         aboutUs = await Promise.all(aboutUs.map(async (news) => {
             news["content"] = (await Promise.all(aboutUsArticles.filter(a=>a.type === news.id).map(async (a) => {
                 console.log(a)
@@ -152,7 +161,7 @@
         }))
         console.log(aboutUs)
 
-        articlesData = [...hotNews, ...topicNews, ...aboutUs]
+        articlesData = [...hotNews, ...topicNews, ...aboutUs, ...videoNews]
 
         let searchResult = articlesData.filter((article) => {
             return article?.title?.includes(query) || article?.content?.includes(query) || article?.h5?.includes(query)
@@ -162,6 +171,9 @@
             let link = `../page.html?type=${result.type}&id=${result.id}`
             if(result.type === "aboutUs") {
                 link = "../aboutUs/index.html?id=" + result.id
+            }
+            if(result.type === "videoNews") {
+                link = "../videoNews/index.html?id=" + result.id
             }
             $("#result").append(
                 `<a class="border w-full rounded-xl p-4 cursor-pointer hover:shadow-lg" href="${link}" target="_blank">

@@ -156,7 +156,7 @@
                     data-bs-target="#collapse${i}"><h5>${title}&nbsp&nbsp<sub>${description}</sub></h5>
             </button>
         </h2>
-        <div id="collapse${i}" class="accordion-collapse collapse" data-bs-parent="#Accordion"><!--collapse+號碼-->
+        <div id="collapse${i}" class="accordion-collapse collapse ${isFirst}" data-bs-parent="#Accordion"><!--collapse+號碼-->
             <div class="card-body">
                 <p>${content}</p>
                 <div class="responsive-video">
@@ -236,6 +236,7 @@
                 .replace(/\${title}/g, article.title)
                 .replace(/\${description}/g, article.description)
                 .replace(/\${i}/g, article.id)
+                .replace(/\${isFirst}/g, i === 0 ? 'show' : '')
                 .replace(/\${content}/g, article.content)
                 .replace(/\${youtube}/g, article.youtube)
             )
