@@ -1,17 +1,92 @@
 [
   {
-    "id": 3,
+    "id": 18,
+    "type": 6,
+    "img": "images/AUpic_06_1.jpg"
+  },
+  {
+    "id":17,
+    "type": 6,
+    "img": "images/AUpic_06_2.jpg"
+  },
+  {
+    "id": 16,
+    "type": 6,
+    "img": "images/AUpic_06_3.jpg"
+  },
+  {
+    "id": 15,
+    "type": 5,
+    "img": "images/AUpic_05_1.jpg"
+  },
+  {
+    "id": 14,
+    "type": 5,
+    "img": "images/AUpic_05_2.jpg"
+  },
+  {
+    "id": 13,
+    "type": 5,
+    "img": "images/AUpic_05_3.jpg"
+  },
+  {
+    "id": 12,
     "type": 4,
     "img": "images/AUpic_04_3.jpg"
   },
   {
-    "id": 2,
+    "id": 11,
     "type": 4,
     "img": "images/AUpic_04_2.jpg"
   },
   {
-    "id": 1,
+    "id": 10,
     "type": 4,
     "img": "images/AUpic_04_1.jpg"
+  },
+  {
+    "id": 9,
+    "type": 3,
+    "img": "images/AUpic_03_1.jpg"
+  },
+  {
+    "id": 8,
+    "type": 3,
+    "img": "images/AUpic_03_2.jpg"
+  },
+  {
+    "id": 7,
+    "type": 3,
+    "img": "images/AUpic_03_3.jpg"
+  },
+  {
+    "id": 6,
+    "type": 2,
+    "img": "images/AUpic_01_1.jpg"
+  },
+  {
+    "id": 5,
+    "type": 2,
+    "img": "images/AUpic_01_2.jpg"
+  },
+  {
+    "id": 4,
+    "type": 2,
+    "img": "images/AUpic_01_3.jpg"
+  },
+  {
+    "id": 3,
+    "type": 1,
+    "img": "images/AUpic_02_1.jpg"
+  },
+  {
+    "id": 2,
+    "type": 1,
+    "img": "images/AUpic_02_2.jpg"
+  },
+  {
+    "id": 1,
+    "type": 1,
+    "img": "images/AUpic_02_3.jpg"
   }
 ]

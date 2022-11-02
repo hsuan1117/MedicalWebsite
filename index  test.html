@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="振興醫院醫訊內容"><!-- 網站內容 50字內包刮標點符號 -->
+    <meta name="keywords" content="振興醫院,振興醫訊"><!-- 網站關鍵字 8個標籤 -->
+    <title>振興醫訊首頁</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" herf="css/blindify.css">
+    <script src="http://ajax.googleeapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/query.blindify.min.js"></script>
+    <script src="js/sample.js"></script>
+</head>
+<body>
+       <header>
+        <div class="logo">
+            <a href="https://www.chgh.org.tw/" target="_blank">
+                <img src="images/logo-pic.gif" alt="" class="pic-1">
+                <img src="images/logo-text.jpg" alt="" class="pic-2">
+            </a>
+        </div>
+
+
+        <form action="/search" class="search">
+            <input type="search" id="search-value" placeholder="Search" name="q"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </form>
+        <div id="hamburger">
+            <div class="hamT"></div>
+            <div class="hamM"></div>
+            <div class="hamB"></div>
+        </div>       
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" 
+                  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+                       &version={graph-api-version}
+                       &appId={your-facebook-app-id}
+                       &autoLogAppEvents=1" 
+                  nonce="FOKrbAYI">
+            </script>
+          
+            <!-- Your like button code -->
+            <div class="fb-like" 
+                 data-href="https://www.your-domain.com/your-page.html" 
+                 data-width=""
+                 data-layout="standard" 
+                 data-action="like" 
+                 data-size="small"  
+                 data-share="true">
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="action">醫訊首頁</a></li>
+                <li><a href="hotNews/index.html">熱門活動</a></li>
+                <li><a href="topicNews/index.html">健康新知</a></li>
+                <li><a href="aboutUs/index.html">振興園地</a></li>
+                <li><a href="videoNews/index.html">影音專區</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="news" class="contanier">
+        <ul id=menu>
+            <li>
+                <a href="https://www.facebook.com/sharer.php?u=https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank">
+                    <i class="fa-brands fa-facebook-square fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://line.naver.jp/R/msg/text/?https://medical_info.chgh.org.tw/#" target="_blank">
+                    <i class="fa-brands fa-line fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://instagram.com/sharer.php?u=https://medical_info.chgh.org.tw/#" target="_blank">
+                    <i class="fa-brands fa-instagram-square fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/share?text=振興醫訊電子報&url=https://medical_info.chgh.org.tw/#">
+                    <i class="fa-brands fa-twitter-square fa-2x"></i>
+                </a>
+            </li>
+            <div class="share">
+                分享
+            </div>
+        </ul>
+       
+        <div class="row align-items-lg-center">
+            <div class="col-12 col-sm-12 col-lg-6">
+                <!--  -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/202210_1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/202210_2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/202209_1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!--  -->
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 pt-3">
+                <h5 class="text-danger"><b>熱門活動</b></h5>
+               <!--  -->
+               <hr>
+               <p style="color:rgb(166, 161, 161)">
+                   2022/09 文/心臟醫學中心
+               </p>
+               <div class="row">
+                   <p class="col-11">
+                       2022海峽兩岸心臟瓣膜論壇：本院及南昌大學第一附屬醫院團隊線上交流
+                       <a href="https://medical_info.chgh.org.tw/page.html?type=hotNews&id=11" class="text-danger" target="_blank" >...全文閱讀</a> 
+                   </p>
+               </div>
+               <!--  -->
+               <hr>
+               <p style="color:rgb(166, 161, 161)">
+                   2022/09 文/編輯部&nbsp資料提供／楊明勳（一般外科主治醫師）、李偉浩（婦產部主治醫師）
+               </p>
+               <div class="row">
+                   <p class="col-11">
+                       腹腔微創手術新進展-以微創單孔手術同時治療婦科腫瘤和小腸腫瘤
+                       <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=23" class="text-danger" target="_blank" >...全文閱讀</a> 
+                   </p>
+               </div>
+                <!--  -->
+                <hr>
+                <p style="color:rgb(166, 161, 161)">
+                    2022/08資料提供/心臟醫學中心 
+                </p>
+                <div class="row">
+                    <p class="col-11">
+                        本院舉辦2022海峽兩岸心臟瓣膜論壇
+                        <a href="https://medical_info.chgh.org.tw/page.html?type=hotNews&id=10" class="text-danger" target="_blank" >...全文閱讀</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bammer-top mt-5 mb-3">
+            <i class="fa-brands fa-slack"></i>&nbsp2022/10/01
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
+                <img src="images/TPnews.jpg" alt="" class="d-block w-100">
+                <div class="content-text">
+                    <h5>健康新知</h5>
+                    <p>
+                        微創手術新境界-以微創單孔手術切除左肝葉腫瘤
+                        <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=22" class="text-danger" target="_blank" >...全文閱讀</a>                  
+                    </p>
+                    <p>
+                        婦科微創手術發展趨勢-由多孔至單孔及自然孔微創手術
+                        <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=21"class="text-danger" target="_blank">...全文閱讀</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
+                <img src="images/AUnews.jpg" alt="" class="d-block w-100">
+                <div class="content-text">
+                    <h5>振興園地</h5>
+                    <p>
+                        本院於9月1日舉辦55週年院慶典禮<a href="https://medical_info.chgh.org.tw/aboutUs/index.html" class="text-danger light" target="_self">...完整報導</a>
+                    </p>
+                    <p>
+                        走過感恩與成長的歲月  振興院童話當年<a href="https://medical_info.chgh.org.tw/aboutUs/index.html" class="text-danger light" target="_self">...完整報導</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
+                <img src="images/Videonews.jpg" alt="" class="d-block w-100">
+                <div class="content-text">
+                    <h5>影音專區</h5>
+                    <p>
+                        緩和醫療家庭會議<a href="https://medical_info.chgh.org.tw/videoNews/index.html" class="text-danger light" target="_self">...影音播放</a>
+                    </p>
+                    <p>
+                        骨科醫學部-減壓式骨水泥灌注手術<a href="https://medical_info.chgh.org.tw/videoNews/index.html" class="text-danger light" target="_self">...影音播放</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        地址：112北市北投區振興街45號<br>
+        電話：(02)2826-4400<br>
+        <br>
+        網站內容為振興醫院所有，未經授權，請勿任意轉載，如有任何問題，請聯繫我們<br>
+        <a href="https://www.chgh.org.tw/Intro/Intro_Newsletters.aspx" target="_blank" title="紙本振興醫訊PDF檔案下載" style="text-decoration:none;color:rgb(109,134,166);">《原紙本振興醫訊PDF檔案下載》</a>
+    </footer>
+    <div id="lightbox">
+        <img src="#" alt="" class="lightimg">
+        <div class="btn-close"><i class="fa-solid fa-xmark fa-2x"></i></div>
+        <div class="btn-next"><i class="fa-solid fa-chevron-right fa-2x"></i></div>
+        <div class="btn-pre"><i class="fa-solid fa-chevron-left fa-2x"></i></div>
+    </div>
+</body>
+</html>
+<script src="js/bootstrap.js"></script>
+<script src="js/design.js"></script>
+<script>
+
+    $(function(){
+        $("#blindify").blindify({
+            //百葉窗方向
+            orientation : "vertical",
+            //指定百葉窗分割數量
+            number()fBlinds: 20,
+            //指定百葉窗特效的撥放速度
+            AnimationSpeed: 2000,
+            //下一張圖片顯示之前的時間
+            delayBetweenSlides: 500,
+            //長條的上下間距
+            gap : 150
+        });
+    });
+
+    document.getElementsByClassName("share")[0].addEventListener("click",function(){
+        let menu = document.getElementById("menu");
+        if(menu.style.right == "-3em" || menu.style.right == ""){
+            menu.style.right = 0;
+        }else{
+            menu.style.right = "-3em";
+
+        }
+    })
+
+    const modalBtn = document.querySelector(".modal-btn"); 
+    const closeBtn = document.querySelector(".close-btn");
+    const modal = document.querySelector(".modal-overlay");
+    modalBtn.addEventListener('click',function(){
+    modal.classList.add("open-modal");
+});
+    closeBtn.addEventListener('click',function(){
+    modal.classList.remove("open-modal");
+});
+</script>
+
+
