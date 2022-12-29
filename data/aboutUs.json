@@ -1,5 +1,21 @@
 [
   {
+    "id": 24,
+    "type": 8,
+    "img": "images/AUpic_07_2.jpg"
+  },
+  {
+    "id":23,
+    "type": 8,
+    "img": "images/AUpic_08_3.jpg"
+  },
+  {
+    "id": 22,
+    "type": 8,
+    "img": "images/AUpic_08_4.jpg"
+  },  
+  
+  {
     "id": 21,
     "type": 7,
     "img": "images/AUpic_07_1.jpg"
