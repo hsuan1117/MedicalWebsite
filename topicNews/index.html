@@ -124,7 +124,22 @@
 </footer>
 <template id="topicnews">
     <div class="col-12 col-sm-6 col-lg-4 item" style="display: block;">
-        <img src="${img}" alt="說明圖片">
+        <div id="carousel_${i}" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                ${indicators}
+            </div>
+            <div class="carousel-inner">
+                ${carousel}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_${i}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_${i}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <h5 style="padding-top: 0.5rem;">${h5}</h5>
         <p>
             ${title}
@@ -170,11 +185,24 @@
 
         articlesData.slice((currentPage - 1) * 9, currentPage * 9).forEach((article, i) => {
             const container = $($('#topicnews').html()
+                .replace(/\${i}/g, i)
                 .replace(/\${img}/g, article.img)
                 .replace(/\${h5}/g, article.h5)
                 .replace(/\${title}/g, article.title)
                 .replace(/\${pdf}/g, article.pdf)
                 .replace(/\${link}/g, new URL(`../page.html?type=topicNews&id=${article.id}`, document.location).href)
+                .replace(/\${carousel}/g,  (() => (
+                    [...article.footerImages, article.img].map((img, i) => {
+                        return `<div class="carousel-item ${i === 0 ?'active' :''}">
+                                        <img src="${img}" class="d-block w-100" alt="說明圖片">
+                                    </div>`
+                    }).join('')
+                ))())
+                .replace(/\${indicators}/g, (() => (
+                    [...article.footerImages, article.img].map((img, ii) => {
+                        return `<button type="button" data-bs-target="#carousel_${i}" data-bs-slide-to="${ii}" class="active" aria-current="true" aria-label="Slide 1"></button>`
+                    }).join('')
+                ))())
                 .replace(/\${link\|encoded}/g, encodeURIComponent(new URL(`../page.html?type=topicNews&id=${article.id}`, document.location).href))
             )
             container.find(".downloadPDF").click(()=>downloadPDF(`../page.html?type=topicNews&id=${article.id}&download=1`))
