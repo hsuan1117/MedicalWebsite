@@ -1,7 +1,17 @@
 [
   {
+    "img": "images/pic_23.jpg",
+    "headimg": "",
+    "h5": "2023/01 文／編輯部 資料提供／心臟醫學中心",
+    "title": "本院心臟醫學中心新購體外反搏治療系統（EECP）",
+    "link": "本院心臟醫學中心新購體外反搏治療系統（EECP）",
+    "footerImages": ["images/pic_23_1.jpg"],
+    "id": 23,
+    "content": "23.html"
+  },
+  {
     "img": "images/pic_22.jpg",
-    "headimg":  "",
+    "headimg": "",
     "h5": "2022/12 文／編輯部",
     "title": "外科部林華卿主任榮獲北市醫師公會杏林獎&nbsp&nbsp急診重症醫學部陳麒中醫師榮獲青年杏林獎",
     "link": "外科部林華卿主任榮獲北市醫師公會杏林獎&nbsp&nbsp急診重症醫學部陳麒中醫師榮獲青年杏林獎",
