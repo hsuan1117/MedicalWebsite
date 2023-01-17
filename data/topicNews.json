@@ -1,12 +1,81 @@
-[
+[  
+  {
+    "img": "images/pic_30.jpg",
+    "headimg": "images/pic_30_01.jpg",
+    "h5": "文／護理部",
+    "title": "控糖路上不孤單 糖尿病照護團隊陪伴您迎向健康",
+    "link": "控糖路上不孤單 糖尿病照護團隊陪伴您迎向健康",
+    "footerImages": ["images/pic_30_02.jpg"],
+    "id": 30,
+    "content": "30.html"
+    },  
+  {
+    "img": "images/pic_29.jpg",
+    "headimg": "images/pic_29_01.jpg",
+    "h5": "文／毛衛中（精神醫學部身心治療科暨睡眠中心主任）",
+    "title": "您睡的好嗎？讓睡眠檢查告訴您",
+    "link": "您睡的好嗎？讓睡眠檢查告訴您",
+    "footerImages": ["images/pic_29_02.jpg"],
+    "id": 29,
+    "content": "29.html"
+    },  
+  {
+    "img": "images/pic_28.jpg",
+    "headimg": "images/pic_28.jpg",
+    "h5": "文／曾敬閔（胸腔內科主治醫師）",
+    "title": "淺談睡眠呼吸中止症的治療",
+    "link": "淺談睡眠呼吸中止症的治療",
+    "footerImages": ["images/pic_28_01.jpg","images/pic_28_02.jpg"],
+    "id": 28,
+    "content": "28.html"
+    },  
+  {
+    "img": "images/pic_27.jpg",
+    "headimg": "images/pic_27.jpg",
+    "h5": "文／陳思甫（復健醫學部神經復健科主任兼教學研究部主任）、劉彥廷（復健醫學部總醫師）",
+    "title": "把握腦中風復健黃金期&nbsp&nbsp活用機器手輔助可提高成效",
+    "link": "把握腦中風復健黃金期&nbsp&nbsp活用機器手輔助可提高成效",
+    "footerImages": ["images/pic_27_01.jpg","images/pic_27_02.jpg"],
+    "id": 27,
+    "content": "27.html"
+    },  
+  {
+    "img": "images/pic_26.jpg",
+    "headimg": "images/pic_26.jpg",
+    "h5": "文／邱怡貞（中風中心個案管理師)、審稿／賴昱樺（中風中心主任）",
+    "title": "腦中風之急性後期整合照護計畫&nbsp&nbsp助您把握中風後黃金復健期",
+    "link": "腦中風之急性後期整合照護計畫&nbsp&nbsp助您把握中風後黃金復健期",
+    "footerImages": [],
+    "id": 26,
+    "content": "26.html"
+    },
+  {
+  "img": "images/pic_25.jpg",
+  "headimg": "images/pic_25.jpg",
+  "h5": "文／趙育箴（眼科部主治醫師）",
+  "title": "乾眼症狀不只是眼睛乾燥",
+  "link": "乾眼症狀不只是眼睛乾燥",
+  "footerImages": ["images/pic_25_01.jpg"],
+  "id": 25,
+  "content": "25.html"
+  },
+  {
+    "img": "images/pic_24.jpg",
+    "headimg": "images/pic_24.jpg",
+    "h5": "文／賴昱樺（中風中心主任兼神經內科主治醫師）",
+    "title": "腦中風患者該如何控制血壓？",
+    "link": "腦中風患者該如何控制血壓？",
+    "footerImages": ["images/pic_24_01.jpg"],
+    "id": 24,
+    "content": "24.html"
+  },
   {
     "img": "images/pic_23.jpg",
     "headimg": "images/pic_23.jpg",
     "h5": "文／編輯部 資料提供／楊明勳（一般外科主治醫師）、李偉浩（婦產部主治醫師）",
     "title": "腹腔微創手術新進展-以微創單孔手術同時治療婦科腫瘤和小腸腫瘤",
     "link": "腹腔微創手術新進展-以微創單孔手術同時治療婦科腫瘤和小腸腫瘤",
-    "footerImages": [    
-    ],
+    "footerImages": [ ],
     "id": 23,
     "content": "23.html"
   },
@@ -16,8 +85,7 @@
     "h5": "文／楊明勳（一般外科主治醫師） 資料提供／洪宏緒（胃腸科主治醫師）",
     "title": "微創手術新境界-以微創單孔手術切除左肝葉腫瘤",
     "link": "微創手術新境界-以微創單孔手術切除左肝葉腫瘤",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 22,
     "content": "22.html"
   },
@@ -37,8 +105,7 @@
     "h5": "文／李永在（心臟血管外科主治醫師）",
     "title": "瓣膜心臟病的手術方式該如何選擇？",
     "link": "瓣膜心臟病的手術方式該如何選擇？",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 20,
     "content": "20.html"
   },
@@ -48,8 +115,7 @@
     "h5": "文／鐘子超（神經外科主治醫師）",
     "title": "頸部疼痛怎麼辦？",
     "link": "頸部疼痛怎麼辦？",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 19,
     "content": "19.html"
   },
@@ -59,8 +125,7 @@
     "h5": "2022/08 文/曹殿萍（心臟血管內科主任）",
     "title": "從「心」出發之血糖問題",
     "link": "從「心」出發之血糖問題",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 18,
     "content": "18.html"
   },
@@ -70,8 +135,7 @@
     "h5": "2022/08 文/劉復康（復健醫學部主任）",
     "title": "下背痛該怎麼辦？",
     "link": "下背痛該怎麼辦？",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 17,
     "content": "17.html"
   },
@@ -81,8 +145,7 @@
     "h5": "2022/08 文/蔡世澤（新陳代謝科兼營養治療科主任）",
     "title": "糖尿病藥物胰島素的治療趨勢",
     "link": "糖尿病藥物胰島素的治療趨勢",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 16,
     "content": "16.html"
   },
@@ -92,8 +155,7 @@
     "h5": "2022/09 文/陳奕賓（營養治療科營養師）",
     "title": "外食挑得巧，血糖免煩惱",
     "link": "外食挑得巧，血糖免煩惱",
-    "footerImages": [    
-    ],
+    "footerImages": [],
     "id": 15,
     "content": "15.html"
   },
@@ -103,9 +165,7 @@
     "h5": "2022/08 文/張芷穎（藥學部藥師）",
     "title": "維持漂亮血糖曲線的胰島素",
     "link": "維持漂亮血糖曲線的胰島素",
-    "footerImages": [
-    
-    ],
+    "footerImages": [],
     "id": 14,
     "content": "14.html"
   },
@@ -115,10 +175,7 @@
     "h5": "2022/08 文/黃建龍（心臟血管內科主治醫師）",
     "title": "血管支架如何選？了解冠狀動脈支架治療新況",
     "link": "血管支架如何選？了解冠狀動脈支架治療新況",
-    "footerImages": [
-
-      "images/pic_08_03.jpg"
-    ],
+    "footerImages": ["images/pic_08_03.jpg"],
     "id": 13,
     "content": "13.html"
   },
@@ -128,9 +185,7 @@
     "h5": "2022/08 文/陽厚生（心臟重建科主任兼心臟血管外科主治醫師)/洪家椿（心臟血管外科醫師）",
     "title": "冠狀動脈繞道手術的長期治療現況",
     "link": "冠狀動脈繞道手術的長期治療現況",
-    "footerImages": [
-      "images/pic_12_1.jpg","images/pic_12_2.jpg","images/pic_12_3.jpg"
-    ],
+    "footerImages": ["images/pic_12_1.jpg","images/pic_12_2.jpg","images/pic_12_3.jpg"],
     "id": 12,
     "content": "12.html"
   },
@@ -140,8 +195,7 @@
     "h5": "2022/08 文/鄧鐘泉（神經內科主任）",
     "title": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
     "link": "別忽略失智症的警訊  及早就醫評估才能延緩退化",
-    "footerImages": [
-    ],
+    "footerImages": [],
     "id": 11,
     "content": "11.html"
   },
@@ -151,8 +205,7 @@
     "h5": "2022/08 文/陳奕賓（營養治療科營養師）",
     "title": "不想忘記你，預防失智怎麼吃",
     "link": "不想忘記你，預防失智怎麼吃",
-    "footerImages": [
-    ],
+    "footerImages": [],
     "id": 10,
     "content": "10.html"
   },
