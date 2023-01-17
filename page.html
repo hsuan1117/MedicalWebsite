@@ -116,7 +116,9 @@
 
     function downloadPDF() {
         let element = document.getElementById("large_container");
-        html2pdf(element)
+        html2pdf(element, {
+            pagebreak: { mode:[ 'avoid-all', 'css', 'legacy'], avoid: 'img' }
+        })
     }
 </script>
 </body>
