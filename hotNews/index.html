@@ -205,7 +205,6 @@
 
                 .replace(/\${carousel}/g,  (() => (
                     [article.img, article.headimg, ...article.footerImages].filter(x=>!!x).map((img, i) => {
-                        if(!img) return ""
                         return `<div class="carousel-item ${i === 0 ?'active' :''}">
                                         <img src="${img}" class="d-block w-100" alt="說明圖片">
                                     </div>`
@@ -213,7 +212,6 @@
                 ))())
                 .replace(/\${indicators}/g, (() => (
                     [article.img, article.headimg, ...article.footerImages].filter(x=>!!x).map((img, ii) => {
-                        if(!img) return ""
                         return `<button type="button" data-bs-target="#carousel_${i}" data-bs-slide-to="${ii}" class="${ii === 0 ? 'active' : ''}" aria-current="true" aria-label="Slide 1"></button>`
                     }).join('')
                 ))())
