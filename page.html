@@ -11,6 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'print': { 'raw': 'print' },
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
             integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -48,7 +59,8 @@
 </div>
 <template id="content">
     <div class="flex flex-col gap-2 items-center">
-        <div id="carousel" class="carousel slide w-full sm:w-3/4 md:w-2/3 lg:w-1/2" data-bs-ride="carousel">
+        <img src="${img}" id="header_img" class="hidden print:block w-full sm:w-3/4 md:w-2/3 lg:w-1/2"/>
+        <div id="carousel" class="carousel print:hidden slide w-full sm:w-3/4 md:w-2/3 lg:w-1/2" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 ${indicators}
             </div>
@@ -156,6 +168,8 @@
 
     function downloadPDF() {
         let element = document.getElementById("large_container");
+        $("#carousel").hide()
+        $("#header_img").show()
         html2pdf(element, {
             pagebreak: { mode:[ 'avoid-all', 'css', 'legacy'], avoid: 'img' }
         })

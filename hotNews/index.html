@@ -128,7 +128,7 @@
 </footer>
 <template id="hotnews">
     <div class="col-12 col-sm-6 col-lg-4 item" style="display: block;">
-        <div id="carousel_${i}" class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel_${i}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="120000">
             <div class="carousel-indicators">
                 ${indicators}
             </div>
@@ -204,7 +204,7 @@
                 .replace(/\${id}/g, article.id)
 
                 .replace(/\${carousel}/g,  (() => (
-                    [...article.footerImages, article.img].map((img, i) => {
+                    [article.img, article.headimg, ...article.footerImages].map((img, i) => {
                         return `<div class="carousel-item ${i === 0 ?'active' :''}">
                                         <img src="${img}" class="d-block w-100" alt="說明圖片">
                                     </div>`
