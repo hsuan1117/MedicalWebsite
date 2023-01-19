@@ -193,14 +193,16 @@
                 .replace(/\${link}/g, new URL(`../page.html?type=topicNews&id=${article.id}`, document.location).href)
                 .replace(/\${carousel}/g,  (() => (
                     [article.img, article.headimg, ...article.footerImages].map((img, i) => {
+                        if(!img) return ''
                         return `<div class="carousel-item ${i === 0 ?'active' :''}">
                                         <img src="${img}" class="d-block w-100" alt="說明圖片">
                                     </div>`
                     }).join('')
                 ))())
                 .replace(/\${indicators}/g, (() => (
-                    [...article.footerImages, article.img].map((img, ii) => {
-                        return `<button type="button" data-bs-target="#carousel_${i}" data-bs-slide-to="${ii}" class="active" aria-current="true" aria-label="Slide 1"></button>`
+                    [article.img, article.headimg, ...article.footerImages].map((img, ii) => {
+                        if(!img) return ''
+                        return `<button type="button" data-bs-target="#carousel_${i}" data-bs-slide-to="${ii}" class="${ii === 0 ? 'active' : ''}" aria-current="true" aria-label="Slide 1"></button>`
                     }).join('')
                 ))())
                 .replace(/\${link\|encoded}/g, encodeURIComponent(new URL(`../page.html?type=topicNews&id=${article.id}`, document.location).href))
