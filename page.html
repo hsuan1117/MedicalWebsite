@@ -59,7 +59,7 @@
 </div>
 <template id="content">
     <div class="flex flex-col gap-2 items-center">
-        <img src="${img}" id="header_img" class="hidden print:block w-full sm:w-3/4 md:w-2/3 lg:w-1/2"/>
+        <img src="${headimg}" id="head_img" class="hidden print:block w-full sm:w-3/4 md:w-2/3 lg:w-1/2"/>
         <div id="carousel" class="carousel print:hidden slide w-full sm:w-3/4 md:w-2/3 lg:w-1/2" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 ${indicators}
@@ -82,6 +82,7 @@
             </button>
         </h5>
         <div class="article_content">${content}</div>
+        <img src="${img}" id="img" class="hidden print:block w-full sm:w-3/4 md:w-2/3 lg:w-1/2"/>
         <div class="footer_images flex flex-col md:flex-row gap-2 md:justify-center"></div>
     </div>
 </template>
@@ -169,10 +170,17 @@
     function downloadPDF() {
         let element = document.getElementById("large_container");
         $("#carousel").hide()
-        $("#header_img").show()
+        $("#head_img").show()
+        $("#img").show()
         html2pdf(element, {
             pagebreak: { mode:[ 'avoid-all', 'css', 'legacy'], avoid: 'img' }
         })
+
+        setTimeout(() => {
+            $("#carousel").show()
+            $("#head_img").hide()
+            $("#img").hide()
+        }, 1000)
     }
 </script>
 <script src="js/bootstrap.js"></script>
