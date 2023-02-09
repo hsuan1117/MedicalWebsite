@@ -119,20 +119,5 @@
     "id": 4,
     "type": 2,
     "img": "images/AUpic_01_3.jpg"
-  },
-  {
-    "id": 3,
-    "type": 1,
-    "img": "images/AUpic_02_1.jpg"
-  },
-  {
-    "id": 2,
-    "type": 1,
-    "img": "images/AUpic_02_2.jpg"
-  },
-  {
-    "id": 1,
-    "type": 1,
-    "img": "images/AUpic_02_3.jpg"
   }
 ]

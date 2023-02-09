@@ -1,5 +1,35 @@
 [ 
   {
+    "img": "images/pic_37.jpg",
+    "headimg": "",
+    "h5": "文／李信興（過敏免疫風濕科主任）",
+    "title": "類風溼性關節炎併發症多  生物製劑有助治療達標",
+    "link": "類風溼性關節炎併發症多  生物製劑有助治療達標",
+    "footerImages": ["images/pic_37_1.jpg","images/pic_37_2.jpg"],
+    "id": 37,
+    "content": "37.html"
+    },   
+  {
+    "img": "images/pic_36.jpg",
+    "headimg": "",
+    "h5": "文／洪宏緒（胃腸科主治醫師）",
+    "title": "胸悶痛，原來是胃食道逆流",
+    "link": "胸悶痛，原來是胃食道逆流",
+    "footerImages": ["images/pic_36_1.jpg","images/pic_36_2.jpg"],
+    "id": 36,
+    "content": "36.html"
+    },   
+  {
+    "img": "images/pic_35.jpg",
+    "headimg": "",
+    "h5": "文／高瑜成（心臟血管內科主治醫師）",
+    "title": "冬季嚴寒防猝死&nbsp&nbsp注意頭頸部保暖",
+    "link": "冬季嚴寒防猝死&nbsp&nbsp注意頭頸部保暖",
+    "footerImages": ["images/pic_35_1.jpg","images/pic_35_2.jpg"],
+    "id": 35,
+    "content": "35.html"
+    },   
+  {
     "img": "images/pic_34.jpg",
     "headimg": "",
     "h5": "文／黃永錚（復健醫學部主治醫師）",
