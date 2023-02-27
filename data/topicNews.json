@@ -1,5 +1,45 @@
 [ 
   {
+    "img": "images/pic_41.jpg",
+    "headimg": "",
+    "h5": "文／陽厚生（心臟醫學中心心臟重建科主任）",
+    "title": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+    "link": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+    "footerImages": ["images/pic_41_1.jpg","images/pic_41_2.jpg"],
+    "id": 41,
+    "content": "41.html"
+    },   
+  {
+    "img": "images/pic_40.jpg",
+    "headimg": "",
+    "h5": "文／陳威廷（胸腔內科主任）",
+    "title": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+    "link": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+    "footerImages": ["images/pic_40_1.jpg"],
+    "id": 40,
+    "content": "40.html"
+    },   
+  {
+    "img": "images/pic_39.jpg",
+    "headimg": "",
+    "h5": "文／鐘子超（神經外科主治醫師）",
+    "title": "請注意小中風背後的警訊",
+    "link": "請注意小中風背後的警訊",
+    "footerImages": ["images/pic_39_1.jpg","images/pic_39_2.jpg"],
+    "id": 39,
+    "content": "39.html"
+    },   
+  {
+    "img": "images/pic_38.jpg",
+    "headimg": "",
+    "h5": "文／蔡世澤（新陳代謝科兼營養治療科主任)",
+    "title": "別輕忽低血糖&nbsp&nbsp連續血糖監測系統有效幫助糖友管理血糖",
+    "link": "別輕忽低血糖&nbsp&nbsp連續血糖監測系統有效幫助糖友管理血糖",
+    "footerImages": ["images/pic_38_1.jpg","images/pic_38_2.jpg"],
+    "id": 38,
+    "content": "38.html"
+    },   
+  {
     "img": "images/pic_37.jpg",
     "headimg": "",
     "h5": "文／李信興（過敏免疫風濕科主任）",
