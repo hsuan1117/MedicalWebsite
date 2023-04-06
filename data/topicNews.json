@@ -1,33 +1,63 @@
 [ 
   {
-    "img": "images/pic_41.jpg",
+    "img": "images/pic_47.jpg",
     "headimg": "",
-    "h5": "文／陽厚生（心臟醫學中心心臟重建科主任）",
-    "title": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
-    "link": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
-    "footerImages": ["images/pic_41_1.jpg","images/pic_41_2.jpg"],
-    "id": 41,
-    "content": "41.html"
+    "h5": "文／楊明勳（一般外科主治醫師）&nbsp&nbsp蔡賢龍（急診重症醫學部主治醫師）",
+    "title": "治療疝氣合併闌尾炎，微創內視鏡手術一次搞定",
+    "link": "治療疝氣合併闌尾炎，微創內視鏡手術一次搞定",
+    "footerImages": ["images/pic_47_1.jpg","images/pic_47_2.jpg","images/pic_47_3.jpg"],
+    "id": 47,
+    "content": "47.html"
     },   
   {
-    "img": "images/pic_40.jpg",
+    "img": "images/pic_46.jpg",
     "headimg": "",
-    "h5": "文／陳威廷（胸腔內科主任）",
-    "title": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
-    "link": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
-    "footerImages": ["images/pic_40_1.jpg"],
-    "id": 40,
-    "content": "40.html"
+    "h5": "文／石光興（婦產部主任）",
+    "title": "如何緩解孕吐",
+    "link": "如何緩解孕吐",
+    "footerImages": ["images/pic_46_1.jpg","images/pic_46_2.jpg"],
+    "id": 46,
+    "content": "46.html"
     },   
   {
-    "img": "images/pic_39.jpg",
+    "img": "images/pic_45.jpg",
     "headimg": "",
-    "h5": "文／鐘子超（神經外科主治醫師）",
-    "title": "請注意小中風背後的警訊",
-    "link": "請注意小中風背後的警訊",
-    "footerImages": ["images/pic_39_1.jpg","images/pic_39_2.jpg"],
-    "id": 39,
-    "content": "39.html"
+    "h5": "文／陳麗淇（精神醫學部兒童青少年暨婦女身心醫學科主任）",
+    "title": "治療過動症，從大腦開始",
+    "link": "治療過動症，從大腦開始",
+    "footerImages": ["images/pic_45_1.jpg","images/pic_45_2.jpg"],
+    "id": 45,
+    "content": "45.html"
+    },   
+  {
+    "img": "images/pic_44.jpg",
+    "headimg": "",
+    "h5": "文／呂宜玲（眼科部主治醫師）",
+    "title": "近視度數淺也可能發生視網膜剝離",
+    "link": "近視度數淺也可能發生視網膜剝離",
+    "footerImages": ["images/pic_44_1.jpg","images/pic_44_2.jpg"],
+    "id": 44,
+    "content": "44.html"
+    },   
+  {
+    "img": "images/pic_43.jpg",
+    "headimg": "",
+    "h5": "文／陳建成（復健醫學部運動復健科主任）",
+    "title": "全身到處痛，竟是「纖維肌痛症」",
+    "link": "全身到處痛，竟是「纖維肌痛症」",
+    "footerImages": ["images/pic_43_1.jpg","images/pic_43_2.jpg"],
+    "id": 43,
+    "content": "43.html"
+    },   
+  {
+    "img": "images/pic_42.jpg",
+    "headimg": "",
+    "h5": "文／力博宏（耳鼻喉部聽覺科主任）",
+    "title": "「失聲」怎麼辦？聲帶保養有6招",
+    "link": "「失聲」怎麼辦？聲帶保養有6招",
+    "footerImages": ["images/pic_42_1.jpg"],
+    "id": 42,
+    "content": "42.html"
     },   
   {
     "img": "images/pic_38.jpg",
