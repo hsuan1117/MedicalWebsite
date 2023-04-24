@@ -1,5 +1,25 @@
 [ 
   {
+    "img": "images/pic_49.jpg",
+    "headimg": "",
+    "h5": "文／陳冠群（心臟血管內科主治醫師兼資訊室主任）",
+    "title": "遠距心臟監測，讓心臟照護零距離",
+    "link": "遠距心臟監測，讓心臟照護零距離",
+    "footerImages": ["images/pic_49_1.jpg"],
+    "id": 49,
+    "content": "49.html"
+    },   
+  {
+    "img": "images/pic_48.jpg",
+    "headimg": "",
+    "h5": "文／陳劭青（神經外科主治醫師）",
+    "title": "關於頭部外傷，該注意什麼呢？",
+    "link": "關於頭部外傷，該注意什麼呢？",
+    "footerImages": ["images/pic_48_1.jpg","images/pic_48_2.jpg"],
+    "id": 48,
+    "content": "48.html"
+    },   
+  {
     "img": "images/pic_47.jpg",
     "headimg": "",
     "h5": "文／楊明勳（一般外科主治醫師）&nbsp&nbsp蔡賢龍（急診重症醫學部主治醫師）",
@@ -58,8 +78,38 @@
     "footerImages": ["images/pic_42_1.jpg"],
     "id": 42,
     "content": "42.html"
-    },   
-  {
+    }, 
+    {
+      "img": "images/pic_41.jpg",
+      "headimg": "",
+      "h5": "文／陽厚生（心臟醫學中心心臟重建科主任）",
+      "title": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+      "link": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+      "footerImages": ["images/pic_41_1.jpg","images/pic_41_2.jpg"],
+      "id": 41,
+      "content": "41.html"
+      },   
+    {
+      "img": "images/pic_40.jpg",
+      "headimg": "",
+      "h5": "文／陳威廷（胸腔內科主任）",
+      "title": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+      "link": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+      "footerImages": ["images/pic_40_1.jpg"],
+      "id": 40,
+      "content": "40.html"
+      },   
+    {
+      "img": "images/pic_39.jpg",
+      "headimg": "",
+      "h5": "文／鐘子超（神經外科主治醫師）",
+      "title": "請注意小中風背後的警訊",
+      "link": "請注意小中風背後的警訊",
+      "footerImages": ["images/pic_39_1.jpg","images/pic_39_2.jpg"],
+      "id": 39,
+      "content": "39.html"
+      },     
+    {
     "img": "images/pic_38.jpg",
     "headimg": "",
     "h5": "文／蔡世澤（新陳代謝科兼營養治療科主任)",
@@ -408,16 +458,6 @@
     "footerImages": [],
     "id": 4,
     "content": "4.html"
-  },
-  {
-    "img": "images/pic_04_1.jpg",
-    "headimg": "",
-    "h5": "2022/02 文/林宜璇(家庭暨社區醫學部主治醫師)",
-    "title": "面對戒菸用藥,您有什麼選擇",
-    "link": "面對戒菸用藥,您有什麼選擇",
-    "footerImages": [],
-    "id": 3,
-    "content": "3.html"
   },
   {
     "img": "images/pic_06.jpg",
