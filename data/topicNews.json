@@ -1,17 +1,207 @@
-[  
+[ 
+  {
+    "img": "images/pic_51.jpg",
+    "headimg": "",
+    "h5": "文／鄭士豪（骨科部主治醫師）",
+    "title": "久坐易腰痛，三招緩解不適",
+    "link": "久坐易腰痛，三招緩解不適",
+    "footerImages": ["images/pic_51_1.jpg","images/pic_51_2.jpg"],
+    "id": 51,
+    "content": "51.html"
+    },   
+  {
+    "img": "images/pic_50.jpg",
+    "headimg": "",
+    "h5": "文／賴昱樺（中風中心主任兼神經內科主治醫師）",
+    "title": "正確認識腦中風",
+    "link": "正確認識腦中風",
+    "footerImages": ["images/pic_50_1.jpg","images/pic_50_2.jpg"],
+    "id": 50,
+    "content": "50.html"
+    },   
+  {
+    "img": "images/pic_49.jpg",
+    "headimg": "",
+    "h5": "文／陳冠群（心臟血管內科主治醫師兼資訊室主任）",
+    "title": "遠距心臟監測，讓心臟照護零距離",
+    "link": "遠距心臟監測，讓心臟照護零距離",
+    "footerImages": ["images/pic_49_1.jpg"],
+    "id": 49,
+    "content": "49.html"
+    },   
+  {
+    "img": "images/pic_48.jpg",
+    "headimg": "",
+    "h5": "文／陳劭青（神經外科主治醫師）",
+    "title": "關於頭部外傷，該注意什麼呢？",
+    "link": "關於頭部外傷，該注意什麼呢？",
+    "footerImages": ["images/pic_48_1.jpg","images/pic_48_2.jpg"],
+    "id": 48,
+    "content": "48.html"
+    },   
+  {
+    "img": "images/pic_47.jpg",
+    "headimg": "",
+    "h5": "文／楊明勳（一般外科主治醫師）&nbsp&nbsp蔡賢龍（急診重症醫學部主治醫師）",
+    "title": "治療疝氣合併闌尾炎，微創內視鏡手術一次搞定",
+    "link": "治療疝氣合併闌尾炎，微創內視鏡手術一次搞定",
+    "footerImages": ["images/pic_47_1.jpg","images/pic_47_2.jpg","images/pic_47_3.jpg"],
+    "id": 47,
+    "content": "47.html"
+    },   
+  {
+    "img": "images/pic_46.jpg",
+    "headimg": "",
+    "h5": "文／石光興（婦產部主任）",
+    "title": "如何緩解孕吐",
+    "link": "如何緩解孕吐",
+    "footerImages": ["images/pic_46_1.jpg","images/pic_46_2.jpg"],
+    "id": 46,
+    "content": "46.html"
+    },   
+  {
+    "img": "images/pic_45.jpg",
+    "headimg": "",
+    "h5": "文／陳麗淇（精神醫學部兒童青少年暨婦女身心醫學科主任）",
+    "title": "治療過動症，從大腦開始",
+    "link": "治療過動症，從大腦開始",
+    "footerImages": ["images/pic_45_1.jpg","images/pic_45_2.jpg"],
+    "id": 45,
+    "content": "45.html"
+    },   
+  {
+    "img": "images/pic_44.jpg",
+    "headimg": "",
+    "h5": "文／呂宜玲（眼科部主治醫師）",
+    "title": "近視度數淺也可能發生視網膜剝離",
+    "link": "近視度數淺也可能發生視網膜剝離",
+    "footerImages": ["images/pic_44_1.jpg","images/pic_44_2.jpg"],
+    "id": 44,
+    "content": "44.html"
+    },   
+  {
+    "img": "images/pic_43.jpg",
+    "headimg": "",
+    "h5": "文／陳建成（復健醫學部運動復健科主任）",
+    "title": "全身到處痛，竟是「纖維肌痛症」",
+    "link": "全身到處痛，竟是「纖維肌痛症」",
+    "footerImages": ["images/pic_43_1.jpg","images/pic_43_2.jpg"],
+    "id": 43,
+    "content": "43.html"
+    },   
+  {
+    "img": "images/pic_42.jpg",
+    "headimg": "",
+    "h5": "文／力博宏（耳鼻喉部聽覺科主任）",
+    "title": "「失聲」怎麼辦？聲帶保養有6招",
+    "link": "「失聲」怎麼辦？聲帶保養有6招",
+    "footerImages": ["images/pic_42_1.jpg"],
+    "id": 42,
+    "content": "42.html"
+    }, 
+    {
+      "img": "images/pic_41.jpg",
+      "headimg": "",
+      "h5": "文／陽厚生（心臟醫學中心心臟重建科主任）",
+      "title": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+      "link": "歷經心臟衰竭，我的心臟功能還會恢復嗎？",
+      "footerImages": ["images/pic_41_1.jpg","images/pic_41_2.jpg"],
+      "id": 41,
+      "content": "41.html"
+      },   
+    {
+      "img": "images/pic_40.jpg",
+      "headimg": "",
+      "h5": "文／陳威廷（胸腔內科主任）",
+      "title": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+      "link": "慢性阻塞性肺病併發症多&nbsp&nbsp嚴重者恐心臟衰竭",
+      "footerImages": ["images/pic_40_1.jpg"],
+      "id": 40,
+      "content": "40.html"
+      },   
+    {
+      "img": "images/pic_39.jpg",
+      "headimg": "",
+      "h5": "文／鐘子超（神經外科主治醫師）",
+      "title": "請注意小中風背後的警訊",
+      "link": "請注意小中風背後的警訊",
+      "footerImages": ["images/pic_39_1.jpg","images/pic_39_2.jpg"],
+      "id": 39,
+      "content": "39.html"
+      },     
+    {
+    "img": "images/pic_38.jpg",
+    "headimg": "",
+    "h5": "文／蔡世澤（新陳代謝科兼營養治療科主任)",
+    "title": "別輕忽低血糖&nbsp&nbsp連續血糖監測系統有效幫助糖友管理血糖",
+    "link": "別輕忽低血糖&nbsp&nbsp連續血糖監測系統有效幫助糖友管理血糖",
+    "footerImages": ["images/pic_38_1.jpg","images/pic_38_2.jpg"],
+    "id": 38,
+    "content": "38.html"
+    },   
+  {
+    "img": "images/pic_37.jpg",
+    "headimg": "",
+    "h5": "文／李信興（過敏免疫風濕科主任）",
+    "title": "類風溼性關節炎併發症多  生物製劑有助治療達標",
+    "link": "類風溼性關節炎併發症多  生物製劑有助治療達標",
+    "footerImages": ["images/pic_37_1.jpg","images/pic_37_2.jpg"],
+    "id": 37,
+    "content": "37.html"
+    },   
+  {
+    "img": "images/pic_36.jpg",
+    "headimg": "",
+    "h5": "文／洪宏緒（胃腸科主治醫師）",
+    "title": "胸悶痛，原來是胃食道逆流",
+    "link": "胸悶痛，原來是胃食道逆流",
+    "footerImages": ["images/pic_36_1.jpg","images/pic_36_2.jpg"],
+    "id": 36,
+    "content": "36.html"
+    },   
+  {
+    "img": "images/pic_35.jpg",
+    "headimg": "",
+    "h5": "文／高瑜成（心臟血管內科主治醫師）",
+    "title": "冬季嚴寒防猝死&nbsp&nbsp注意頭頸部保暖",
+    "link": "冬季嚴寒防猝死&nbsp&nbsp注意頭頸部保暖",
+    "footerImages": ["images/pic_35_1.jpg","images/pic_35_2.jpg"],
+    "id": 35,
+    "content": "35.html"
+    },   
+  {
+    "img": "images/pic_34.jpg",
+    "headimg": "",
+    "h5": "文／黃永錚（復健醫學部主治醫師）",
+    "title": "您的膝蓋老化了嗎？",
+    "link": "您的膝蓋老化了嗎？",
+    "footerImages": ["images/pic_34_1.jpg","images/pic_34_2.jpg"],
+    "id": 34,
+    "content": "34.html"
+    },   
+  {
+    "img": "images/pic_33.jpg",
+    "headimg": "",
+    "h5": "文／黃祥霖（骨科部主治醫師）",
+    "title": "退化性關節炎可以不開刀嗎？",
+    "link": "退化性關節炎可以不開刀嗎？",
+    "footerImages": ["images/pic_33_1.jpg"],
+    "id": 33,
+    "content": "33.html"
+    },  
   {
     "img": "images/pic_32.jpg",
-    "headimg": "images/pic_32.jpg",
+    "headimg": "",
     "h5": "文／陳冠群（心臟血管內科主治醫師暨資訊室主任）",
-    "title": "留意按摩位置、力道  按摩前多喝水別喝酒 心臟病人也能安心享受按摩樂",
-    "link": "留意按摩位置、力道  按摩前多喝水別喝酒 心臟病人也能安心享受按摩樂",
+    "title": "留意按摩位置、力道&nbsp&nbsp按摩前多喝水別喝酒&nbsp&nbsp心臟病人也能安心享受按摩樂",
+    "link": "留意按摩位置、力道&nbsp&nbsp按摩前多喝水別喝酒&nbsp&nbsp心臟病人也能安心享受按摩樂",
     "footerImages": ["images/pic_32_01.jpg"],
     "id": 32,
     "content": "32.html"
     },  
   {
     "img": "images/pic_31.jpg",
-    "headimg": "images/pic_31.jpg",
+    "headimg": "",
     "h5": "文／李偉浩（婦產部主治醫師）",
     "title": "解開婦女保健的迷思",
     "link": "解開婦女保健的迷思",
@@ -41,7 +231,7 @@
     },  
   {
     "img": "images/pic_28.jpg",
-    "headimg": "images/pic_28.jpg",
+    "headimg": "",
     "h5": "文／曾敬閔（胸腔內科主治醫師）",
     "title": "淺談睡眠呼吸中止症的治療",
     "link": "淺談睡眠呼吸中止症的治療",
@@ -51,7 +241,7 @@
     },  
   {
     "img": "images/pic_27.jpg",
-    "headimg": "images/pic_27.jpg",
+    "headimg": "",
     "h5": "文／陳思甫（復健醫學部神經復健科主任兼教學研究部主任）、劉彥廷（復健醫學部總醫師）",
     "title": "把握腦中風復健黃金期&nbsp&nbsp活用機器手輔助可提高成效",
     "link": "把握腦中風復健黃金期&nbsp&nbsp活用機器手輔助可提高成效",
@@ -61,7 +251,7 @@
     },  
   {
     "img": "images/pic_26.jpg",
-    "headimg": "images/pic_26.jpg",
+    "headimg": "",
     "h5": "文／邱怡貞（中風中心個案管理師)、審稿／賴昱樺（中風中心主任）",
     "title": "腦中風之急性後期整合照護計畫&nbsp&nbsp助您把握中風後黃金復健期",
     "link": "腦中風之急性後期整合照護計畫&nbsp&nbsp助您把握中風後黃金復健期",
@@ -71,7 +261,7 @@
     },
   {
   "img": "images/pic_25.jpg",
-  "headimg": "images/pic_25.jpg",
+  "headimg": "",
   "h5": "文／趙育箴（眼科部主治醫師）",
   "title": "乾眼症狀不只是眼睛乾燥",
   "link": "乾眼症狀不只是眼睛乾燥",
@@ -81,7 +271,7 @@
   },
   {
     "img": "images/pic_24.jpg",
-    "headimg": "images/pic_24.jpg",
+    "headimg": "",
     "h5": "文／賴昱樺（中風中心主任兼神經內科主治醫師）",
     "title": "腦中風患者該如何控制血壓？",
     "link": "腦中風患者該如何控制血壓？",
@@ -91,7 +281,7 @@
   },
   {
     "img": "images/pic_23.jpg",
-    "headimg": "images/pic_23.jpg",
+    "headimg": "",
     "h5": "文／編輯部 資料提供／楊明勳（一般外科主治醫師）、李偉浩（婦產部主治醫師）",
     "title": "腹腔微創手術新進展-以微創單孔手術同時治療婦科腫瘤和小腸腫瘤",
     "link": "腹腔微創手術新進展-以微創單孔手術同時治療婦科腫瘤和小腸腫瘤",
@@ -288,16 +478,6 @@
     "footerImages": [],
     "id": 4,
     "content": "4.html"
-  },
-  {
-    "img": "images/pic_04_1.jpg",
-    "headimg": "",
-    "h5": "2022/02 文/林宜璇(家庭暨社區醫學部主治醫師)",
-    "title": "面對戒菸用藥,您有什麼選擇",
-    "link": "面對戒菸用藥,您有什麼選擇",
-    "footerImages": [],
-    "id": 3,
-    "content": "3.html"
   },
   {
     "img": "images/pic_06.jpg",

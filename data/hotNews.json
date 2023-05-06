@@ -1,5 +1,45 @@
 [
   {
+    "img": "images/pic_28.jpg",
+    "headimg": "images/pic_28_4.jpg",
+    "h5": "文／瓣膜治療中心",
+    "title": "振興醫院瓣膜治療中心團隊以「全方位二葉化主動脈瓣膜狹窄的治療」榮獲「國家品質標章」並於國際會議發表",
+    "link": "振興醫院瓣膜治療中心團隊以「全方位二葉化主動脈瓣膜狹窄的治療」榮獲「國家品質標章」並於國際會議發表",
+    "footerImages": ["images/pic_28_1.jpg","images/pic_28_2.jpg","images/pic_28_3.jpg"],
+    "id": 28,
+    "content": "28.html"
+  },
+  {
+    "img": "images/pic_27.jpg",
+    "headimg": "",
+    "h5": "文／編輯部",
+    "title": "緬懷創辦人——紀念蔣宋美齡女士126歲華誕",
+    "link": "緬懷創辦人——紀念蔣宋美齡女士126歲華誕",
+    "footerImages": ["images/pic_27_1.jpg","images/pic_27_2.jpg","images/pic_27_3.jpg"],
+    "id": 27,
+    "content": "27.html"
+  },
+  {
+    "img": "images/pic_26.jpg",
+    "headimg": "",
+    "h5": "2023/03 文／鄧欣一（心臟血管內科主治醫師）、高瑜成（心臟血管內科主治醫師）、曹殿萍（心臟血管內科主任）、殷偉賢（醫療副院長）",
+    "title": "本院結合「人工智慧影像」導引「衝擊波」治療血管嚴重鈣化病變",
+    "link": "本院結合「人工智慧影像」導引「衝擊波」治療血管嚴重鈣化病變",
+    "footerImages": ["images/pic_26_1.jpg"],
+    "id": 26,
+    "content": "26.html"
+  },
+  {
+    "img": "images/pic_25.jpg",
+    "headimg": "",
+    "h5": "2023/01 文／護理部",
+    "title": "美國西雅圖西北大學護理系師生來院跨文化交流",
+    "link": "美國西雅圖西北大學護理系師生來院跨文化交流",
+    "footerImages": ["images/pic_25_1.jpg","images/pic_25_2.jpg"],
+    "id": 25,
+    "content": "25.html"
+  },
+  {
     "img": "images/pic_23.jpg",
     "headimg": "",
     "h5": "2023/01 文／編輯部 資料提供／心臟醫學中心",
@@ -127,9 +167,7 @@
     "h5": "2022/02 資料提供/遠距暨國際醫療中心,心臟血管內科 文/編輯部 ",
     "title": "接種新冠肺炎疫苗爆心肌炎命危 本院醫療團隊成功救治越南台商",
     "link": "接種新冠肺炎疫苗爆心肌炎命危 本院醫療團隊成功救治越南台商",
-    "footerImages": [
-    
-    ],
+    "footerImages": [ ],
     "id": 7,
     "content": "7.html"
   },
