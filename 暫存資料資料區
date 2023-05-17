@@ -1,20 +1,36 @@
-{
-  "img": "images/pic_51.jpg",
-  "headimg": "",
-  "h5": "文／鄭士豪（骨科部主治醫師）",
-  "title": "久坐易腰痛，三招緩解不適",
-  "link": "久坐易腰痛，三招緩解不適",
-  "footerImages": ["images/pic_51_1.jpg","images/pic_51_2.jpg"],
-  "id": 51,
-  "content": "51.html"
-  },   
-{
-  "img": "images/pic_50.jpg",
-  "headimg": "",
-  "h5": "文／賴昱樺（中風中心主任兼神經內科主治醫師）",
-  "title": "正確認識腦中風",
-  "link": "正確認識腦中風",
-  "footerImages": ["images/pic_50_1.jpg","images/pic_50_2.jpg"],
-  "id": 50,
-  "content": "50.html"
-  },   
+
+    <h5>健康新知</h5>
+                <p>
+                    遠距心臟監測，讓心臟照護零距離
+                    <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=49" class="text-danger"
+                       target="_blank">...全文閱讀</a>
+                </p>
+                <p>
+                    關於頭部外傷，該注意什麼呢？
+                    <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=48" class="text-danger"
+                       target="_blank">...全文閱讀</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
+            <img src="images/AUnews.jpg" alt="" class="d-block w-100">
+            <div class="content-text">
+
+
+
+            <h5>健康新知</h5>
+                <p>
+                    久坐易腰痛，三招緩解不適
+                    <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=51" class="text-danger"
+                       target="_blank">...全文閱讀</a>
+                </p>
+                <p>
+                    正確認識腦中風
+                    <a href="https://medical_info.chgh.org.tw/page.html?type=topicNews&id=50" class="text-danger"
+                       target="_blank">...全文閱讀</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
+            <img src="images/AUnews.jpg" alt="" class="d-block w-100">
+            <div class="content-text">
