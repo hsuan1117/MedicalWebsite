@@ -1,5 +1,25 @@
 [ 
   {
+    "img": "images/pic_61.jpg",
+    "headimg": "",
+    "h5": "文／李林鍵（復健醫學部主治醫師）",
+    "title": "青少年肩膀一高一低，小心脊椎側彎",
+    "link": "青少年肩膀一高一低，小心脊椎側彎",
+    "footerImages": ["images/pic_61_1.jpg"],
+    "id": 61,
+    "content": "61.html"
+    },   
+  {
+    "img": "images/pic_60.jpg",
+    "headimg": "",
+    "h5": "文／陳以琳（精神醫學部老年精神科主治醫師）",
+    "title": "年紀大、睡不好，該怎麼辦？",
+    "link": "年紀大、睡不好，該怎麼辦？",
+    "footerImages": ["images/pic_60_1.jpg","images/pic_60_2.jpg"],
+    "id": 60,
+    "content": "60.html"
+    },   
+  {
     "img": "images/pic_59.jpg",
     "headimg": "",
     "h5": "文／張鴻猷（心臟血管內科主治醫師）",
@@ -22,7 +42,7 @@
   {
     "img": "images/pic_57.jpg",
     "headimg": "",
-    "h5": "文／許粹剛（眼科部主治醫師）",
+    "h5": "文／許粹剛（眼科部一般眼科主任）",
     "title": "銀髮族慎防老年黃斑部病變 ",
     "link": "銀髮族慎防老年黃斑部病變 ",
     "footerImages": ["images/pic_57_1.jpg","images/pic_57_2.jpg","images/pic_57_3.jpg"],
