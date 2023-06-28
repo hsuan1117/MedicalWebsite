@@ -1,5 +1,15 @@
 [ 
   {
+    "img": "images/pic_62.jpg",
+    "headimg": "",
+    "h5": "文／尤和平（心臟血管內科主治醫師）",
+    "title": "戒菸好難，該怎麼辦？",
+    "link": "戒菸好難，該怎麼辦？",
+    "footerImages": ["images/pic_62_1.jpg","images/pic_62_2.jpg"],
+    "id": 62,
+    "content": "62.html"
+    },   
+  {
     "img": "images/pic_61.jpg",
     "headimg": "",
     "h5": "文／李林鍵（復健醫學部主治醫師）",
