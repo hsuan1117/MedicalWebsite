@@ -1,5 +1,65 @@
 [ 
   {
+    "img": "images/pic_68.jpg",
+    "headimg": "",
+    "h5": "文／杜隆成（美容醫學科主任）",
+    "title": "嚴重眼瞼下垂視線不清，無痕提眼肌手術讓您眼前一亮",
+    "link": "嚴重眼瞼下垂視線不清，無痕提眼肌手術讓您眼前一亮",
+    "footerImages": ["images/pic_68_1.jpg","images/pic_68_2.jpg"],
+    "id": 68,
+    "content": "68.html"
+    },     
+ {
+    "img": "images/pic_67.jpg",
+    "headimg": "",
+    "h5": "文／劉怡凡（心臟血管內科主治醫師）",
+    "title": "夏季護心，從量血壓開始",
+    "link": "夏季護心，從量血壓開始",
+    "footerImages": ["images/pic_67_1.jpg","images/pic_67_2.jpg"],
+    "id": 67,
+    "content": "67.html"
+    },    
+ {
+  "img": "images/pic_66.jpg",
+  "headimg": "",
+  "h5": "文／蔡世澤（新陳代謝科兼營養治療科主任）",
+  "title": "糖尿病人請當心腎病變",
+  "link": "糖尿病人請當心腎病變",
+  "footerImages": ["images/pic_66_1.jpg"],
+  "id": 66,
+  "content": "66.html"
+  },   
+  {
+    "img": "images/pic_65.jpg",
+    "headimg": "",
+    "h5": "文／陳韻婷（營養治療科營養師）",
+    "title": "糖尿病友發生腎病變時，飲食該注意什麼？",
+    "link": "糖尿病友發生腎病變時，飲食該注意什麼？",
+    "footerImages": ["images/pic_65_1.jpg","images/pic_65_2.jpg"],
+    "id": 65,
+    "content": "65.html"
+    },   
+  {
+    "img": "images/pic_64.jpg",
+    "headimg": "",
+    "h5": "文／田知學（急診重症醫學部代理主任）",
+    "title": "夏季炎熱高溫，年長者慎防熱傷害",
+    "link": "夏季炎熱高溫，年長者慎防熱傷害",
+    "footerImages": ["images/pic_64_1.jpg","images/pic_64_2.jpg"],
+    "id": 64,
+    "content": "64.html"
+    },   
+  {
+    "img": "images/pic_63.jpg",
+    "headimg": "",
+    "h5": "文／黃任嫻（大腸直腸外科代理主任）",
+    "title": "大腸鏡檢查該注意什麼？",
+    "link": "大腸鏡檢查該注意什麼？",
+    "footerImages": ["images/pic_63_1.jpg","images/pic_63_2.jpg"],
+    "id": 63,
+    "content": "63.html"
+    },   
+  {
     "img": "images/pic_62.jpg",
     "headimg": "",
     "h5": "文／尤和平（心臟血管內科主治醫師）",
