@@ -47,36 +47,6 @@
     "img": "images/AUpic_07_3.jpg"
   },  
   {
-    "id": 18,
-    "type": 6,
-    "img": "images/AUpic_06_1.jpg"
-  },
-  {
-    "id":17,
-    "type": 6,
-    "img": "images/AUpic_06_2.jpg"
-  },
-  {
-    "id": 16,
-    "type": 6,
-    "img": "images/AUpic_06_3.jpg"
-  },
-  {
-    "id": 15,
-    "type": 5,
-    "img": "images/AUpic_05_1.jpg"
-  },
-  {
-    "id": 14,
-    "type": 5,
-    "img": "images/AUpic_05_2.jpg"
-  },
-  {
-    "id": 13,
-    "type": 5,
-    "img": "images/AUpic_05_3.jpg"
-  },
-  {
     "id": 12,
     "type": 4,
     "img": "images/AUpic_04_3.jpg"

@@ -34,3 +34,17 @@
         <div class="col-12 col-md-4 col-lg-3 mt-5 mb-5">
             <img src="images/AUnews.jpg" alt="" class="d-block w-100">
             <div class="content-text">
+
+
+
+//hotnews//
+    {
+    "img": "images/pic_25.jpg",
+    "headimg": "",
+    "h5": "2023/01 文／護理部",
+    "title": "美國西雅圖西北大學護理系師生來院跨文化交流",
+    "link": "美國西雅圖西北大學護理系師生來院跨文化交流",
+    "footerImages": ["images/pic_25_1.jpg","images/pic_25_2.jpg"],
+    "id": 25,
+    "content": "25.html"
+  },

@@ -1,5 +1,45 @@
 [ 
   {
+    "img": "images/pic_76.jpg",
+    "headimg": "",
+    "h5": "文／急診重症醫學部護理團隊、陳俊芳（急診重症醫學部災難醫學科主任）",
+    "title": "步步驚心，山林踏青慎防蛇類咬傷",
+    "link": "步步驚心，山林踏青慎防蛇類咬傷",
+    "footerImages": ["images/pic_76_1.jpg"],
+    "id": 76,
+    "content": "76.html"
+    },      
+  {
+    "img": "images/pic_75.jpg",
+    "headimg": "",
+    "h5": "文／力博宏（耳鼻喉部聽覺科主任）",
+    "title": "長時間配戴耳機恐傷聽力",
+    "link": "長時間配戴耳機恐傷聽力",
+    "footerImages": ["images/pic_75_1.jpg","images/pic_75_2.jpg"],
+    "id": 75,
+    "content": "75.html"
+    },      
+  {
+    "img": "images/pic_74.jpg",
+    "headimg": "",
+    "h5": "文／蔡佳臻（眼科部視網膜科主任）",
+    "title": "常用3C產品恐傷視力，勿忘護眼六重點",
+    "link": "常用3C產品恐傷視力，勿忘護眼六重點",
+    "footerImages": ["images/pic_74_1.jpg","images/pic_74_2.jpg"],
+    "id": 74,
+    "content": "74.html"
+    },      
+  {
+    "img": "images/pic_73.jpg",
+    "headimg": "",
+    "h5": "文／蔡昇翰（泌尿部微創手術科主任）",
+    "title": "解析攝護腺癌的治療方式",
+    "link": "職解析攝護腺癌的治療方式",
+    "footerImages": ["images/pic_73_1.jpg","images/pic_73_2.jpg"],
+    "id": 73,
+    "content": "73.html"
+    },      
+  {
     "img": "images/pic_72.jpg",
     "headimg": "",
     "h5": "文／蘇東平（精神醫學部教授級醫師）",
@@ -33,8 +73,8 @@
     "img": "images/pic_69.jpg",
     "headimg": "",
     "h5": "文／蔡世滋（家庭暨社區醫學部主任兼過敏免疫風濕科主治醫師）",
-    "title": "免疫失衡恐引發乾癬性關節炎，應及早治療以降低併發症風險",
-    "link": "免疫失衡恐引發乾癬性關節炎，應及早治療以降低併發症風險",
+    "title": "免疫失衡恐引發乾癬性關節炎<br>應及早治療以降低併發症風險",
+    "link": "免疫失衡恐引發乾癬性關節炎<br>應及早治療以降低併發症風險",
     "footerImages": ["images/pic_69_1.jpg","images/pic_69_2.jpg"],
     "id": 69,
     "content": "69.html"
