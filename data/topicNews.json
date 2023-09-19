@@ -1,5 +1,35 @@
 [ 
   {
+    "img": "images/pic_79.jpg",
+    "headimg": "",
+    "h5": "文／袁瑋（銀光學苑主任兼精神醫學部主治醫師）",
+    "title": "帶著長輩一同規劃出遊，落實身心腦鍛鍊",
+    "link": "帶著長輩一同規劃出遊，落實身心腦鍛鍊",
+    "footerImages": ["images/pic_79_1.jpg","images/pic_79_2.jpg"],
+    "id": 79,
+    "content": "79.html"
+    },      
+  {
+    "img": "images/pic_78.jpg",
+    "headimg": "",
+    "h5": "文／陶啓偉（內科部主任）",
+    "title": "咳嗽難癒病因多，正確治療方見效",
+    "link": "咳嗽難癒病因多，正確治療方見效",
+    "footerImages": ["images/pic_78_1.jpg","images/pic_78_2.jpg"],
+    "id": 78,
+    "content": "78.html"
+    },      
+  {
+    "img": "images/pic_77.jpg",
+    "headimg": "",
+    "h5": "文／常傳訓（外科部乳房治療中心主任）",
+    "title": "強化輔助治療有效預防HER2乳癌復發及轉移",
+    "link": "強化輔助治療有效預防HER2乳癌復發及轉移",
+    "footerImages": ["images/pic_77_1.jpg","images/pic_77_2.jpg"],
+    "id": 77,
+    "content": "77.html"
+    },      
+  {
     "img": "images/pic_76.jpg",
     "headimg": "",
     "h5": "文／急診重症醫學部護理團隊、陳俊芳（急診重症醫學部災難醫學科主任）",
