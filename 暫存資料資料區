@@ -38,13 +38,8 @@
 
 
 //hotnews//
-    {
-    "img": "images/pic_25.jpg",
-    "headimg": "",
-    "h5": "2023/01 文／護理部",
-    "title": "美國西雅圖西北大學護理系師生來院跨文化交流",
-    "link": "美國西雅圖西北大學護理系師生來院跨文化交流",
-    "footerImages": ["images/pic_25_1.jpg","images/pic_25_2.jpg"],
-    "id": 25,
-    "content": "25.html"
-  },
+
+   佔存網頁調出pop window
+   <!-- <div class="col-12">
+        <img src="images/fireworks2.jpg" width="100%">
+    </div>-->
