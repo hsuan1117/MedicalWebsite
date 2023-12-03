@@ -1,5 +1,265 @@
 [ 
   {
+    "img": "images/pic_87.jpg",
+    "headimg": "",
+    "h5": "文／張天祐（影像醫學部主任）",
+    "title": "淺談影像醫學的介入診療",
+    "link": "淺談影像醫學的介入診療",
+    "footerImages": ["images/pic_87_1.jpg","images/pic_87_2.jpg"],
+    "id": 87,
+    "content": "87.html"
+    },      
+  {
+    "img": "images/pic_86.jpg",
+    "headimg": "",
+    "h5": "文／蔡明潔（睡眠中心臨床心理師）",
+    "title": "改善睡眠品質請先養成睡眠好體質",
+    "link": "改善睡眠品質請先養成睡眠好體質",
+    "footerImages": ["images/pic_86_1.jpg","images/pic_86_2.jpg"],
+    "id": 86,
+    "content": "86.html"
+    },      
+  {
+    "img": "images/pic_85.jpg",
+    "headimg": "",
+    "h5": "文／毛衛中（精神醫學部主任兼睡眠中心主任）",
+    "title": "安眠藥並非仙丹，建立良好睡眠習慣方能改善生活品質",
+    "link": "安眠藥並非仙丹，建立良好睡眠習慣方能改善生活品質",
+    "footerImages": ["images/pic_85_1.jpg","images/pic_85_2.jpg"],
+    "id": 85,
+    "content": "85.html"
+    },      
+  {
+    "img": "images/pic_84.jpg",
+    "headimg": "",
+    "h5": "文／陳國維（血液腫瘤科主治醫師）",
+    "title": "罹患乳癌不可怕，觀念錯誤更傷身",
+    "link": "罹患乳癌不可怕，觀念錯誤更傷身",
+    "footerImages": ["images/pic_84_1.jpg","images/pic_84_2.jpg"],
+    "id": 84,
+    "content": "84.html"
+    },      
+  {
+    "img": "images/pic_83.jpg",
+    "headimg": "",
+    "h5": "文／蔡信宏（腎臟科主任）",
+    "title": "避免糖尿病腎病變，請積極追蹤蛋白尿及腎功能",
+    "link": "避免糖尿病腎病變，請積極追蹤蛋白尿及腎功能",
+    "footerImages": ["images/pic_83_1.jpg","images/pic_83_2.jpg"],
+    "id": 83,
+    "content": "83.html"
+    },      
+  {
+    "img": "images/pic_82.jpg",
+    "headimg": "",
+    "h5": "文／骨科護理團隊、崔祐荃（骨科部主治醫師）",
+    "title": "保「命」防「跌」，避免病人於住院期間發生跌倒",
+    "link": "保「命」防「跌」，避免病人於住院期間發生跌倒",
+    "footerImages": ["images/pic_82_1.jpg"],
+    "id": 82,
+    "content": "82.html"
+    },      
+  {
+    "img": "images/pic_81.jpg",
+    "headimg": "",
+    "h5": "文／陳怡君（家庭醫學科主任）",
+    "title": "帶狀疱疹疫苗知多少",
+    "link": "帶狀疱疹疫苗知多少",
+    "footerImages": ["images/pic_81_1.jpg","images/pic_81_2.jpg"],
+    "id": 81,
+    "content": "81.html"
+    },      
+  {
+    "img": "images/pic_80.jpg",
+    "headimg": "",
+    "h5": "文／鄭士豪（骨科部主治醫師）",
+    "title": "女性朋友請及早預防骨質疏鬆症",
+    "link": "女性朋友請及早預防骨質疏鬆症",
+    "footerImages": ["images/pic_80_1.jpg","images/pic_80_2.jpg"],
+    "id": 80,
+    "content": "80.html"
+    },      
+  {
+    "img": "images/pic_79.jpg",
+    "headimg": "",
+    "h5": "文／袁瑋（銀光學苑主任兼精神醫學部主治醫師）",
+    "title": "帶著長輩一同規劃出遊，落實身心腦鍛鍊",
+    "link": "帶著長輩一同規劃出遊，落實身心腦鍛鍊",
+    "footerImages": ["images/pic_79_1.jpg","images/pic_79_2.jpg"],
+    "id": 79,
+    "content": "79.html"
+    },      
+  {
+    "img": "images/pic_78.jpg",
+    "headimg": "",
+    "h5": "文／陶啓偉（內科部主任）",
+    "title": "咳嗽難癒病因多，正確治療方見效",
+    "link": "咳嗽難癒病因多，正確治療方見效",
+    "footerImages": ["images/pic_78_1.jpg","images/pic_78_2.jpg"],
+    "id": 78,
+    "content": "78.html"
+    },      
+  {
+    "img": "images/pic_77.jpg",
+    "headimg": "",
+    "h5": "文／常傳訓（外科部乳房治療中心主任）",
+    "title": "強化輔助治療有效預防HER2乳癌復發及轉移",
+    "link": "強化輔助治療有效預防HER2乳癌復發及轉移",
+    "footerImages": ["images/pic_77_1.jpg","images/pic_77_2.jpg"],
+    "id": 77,
+    "content": "77.html"
+    },      
+  {
+    "img": "images/pic_76.jpg",
+    "headimg": "",
+    "h5": "文／急診重症醫學部護理團隊、陳俊芳（急診重症醫學部災難醫學科主任）",
+    "title": "步步驚心，山林踏青慎防蛇類咬傷",
+    "link": "步步驚心，山林踏青慎防蛇類咬傷",
+    "footerImages": ["images/pic_76_1.jpg"],
+    "id": 76,
+    "content": "76.html"
+    },      
+  {
+    "img": "images/pic_75.jpg",
+    "headimg": "",
+    "h5": "文／力博宏（耳鼻喉部聽覺科主任）",
+    "title": "長時間配戴耳機恐傷聽力",
+    "link": "長時間配戴耳機恐傷聽力",
+    "footerImages": ["images/pic_75_1.jpg","images/pic_75_2.jpg"],
+    "id": 75,
+    "content": "75.html"
+    },      
+  {
+    "img": "images/pic_74.jpg",
+    "headimg": "",
+    "h5": "文／蔡佳臻（眼科部視網膜科主任）",
+    "title": "常用3C產品恐傷視力，勿忘護眼六重點",
+    "link": "常用3C產品恐傷視力，勿忘護眼六重點",
+    "footerImages": ["images/pic_74_1.jpg","images/pic_74_2.jpg"],
+    "id": 74,
+    "content": "74.html"
+    },      
+  {
+    "img": "images/pic_73.jpg",
+    "headimg": "",
+    "h5": "文／蔡昇翰（泌尿部微創手術科主任）",
+    "title": "解析攝護腺癌的治療方式",
+    "link": "職解析攝護腺癌的治療方式",
+    "footerImages": ["images/pic_73_1.jpg","images/pic_73_2.jpg"],
+    "id": 73,
+    "content": "73.html"
+    },      
+  {
+    "img": "images/pic_72.jpg",
+    "headimg": "",
+    "h5": "文／蘇東平（精神醫學部教授級醫師）",
+    "title": "職場壓力恐引發重度憂鬱症，請及早就醫治療",
+    "link": "職場壓力恐引發重度憂鬱症，請及早就醫治療",
+    "footerImages": ["images/pic_72_1.jpg","images/pic_72_2.jpg"],
+    "id": 72,
+    "content": "72.html"
+    },      
+  {
+    "img": "images/pic_71.jpg",
+    "headimg": "",
+    "h5": "文／李偉浩（婦產部主治醫師）",
+    "title": "難以察覺的卵巢癌",
+    "link": "難以察覺的卵巢癌",
+    "footerImages": ["images/pic_71_1.jpg","images/pic_71_2.jpg"],
+    "id": 71,
+    "content": "71.html"
+    },      
+  {
+    "img": "images/pic_70.jpg",
+    "headimg": "",
+    "h5": "文／張智惠（耳鼻喉部主治醫師）",
+    "title": "遠離咽喉逆流，尋回美麗人「聲」",
+    "link": "遠離咽喉逆流，尋回美麗人「聲」",
+    "footerImages": ["images/pic_70_1.jpg","images/pic_70_2.jpg"],
+    "id": 70,
+    "content": "70.html"
+    },      
+  {
+    "img": "images/pic_69.jpg",
+    "headimg": "",
+    "h5": "文／蔡世滋（家庭暨社區醫學部主任兼過敏免疫風濕科主治醫師）",
+    "title": "免疫失衡恐引發乾癬性關節炎<br>應及早治療以降低併發症風險",
+    "link": "免疫失衡恐引發乾癬性關節炎<br>應及早治療以降低併發症風險",
+    "footerImages": ["images/pic_69_1.jpg","images/pic_69_2.jpg"],
+    "id": 69,
+    "content": "69.html"
+    },     
+  {
+    "img": "images/pic_68.jpg",
+    "headimg": "",
+    "h5": "文／杜隆成（美容醫學科主任）",
+    "title": "嚴重眼瞼下垂視線不清<br>無痕提眼肌手術讓您眼前一亮",
+    "link": "嚴重眼瞼下垂視線不清<br>無痕提眼肌手術讓您眼前一亮",
+    "footerImages": ["images/pic_68_1.jpg","images/pic_68_2.jpg"],
+    "id": 68,
+    "content": "68.html"
+    },     
+ {
+    "img": "images/pic_67.jpg",
+    "headimg": "",
+    "h5": "文／劉怡凡（心臟血管內科主治醫師）",
+    "title": "夏季護心，從量血壓開始",
+    "link": "夏季護心，從量血壓開始",
+    "footerImages": ["images/pic_67_1.jpg","images/pic_67_2.jpg"],
+    "id": 67,
+    "content": "67.html"
+    },    
+ {
+  "img": "images/pic_66.jpg",
+  "headimg": "",
+  "h5": "文／蔡世澤（新陳代謝科兼營養治療科主任）",
+  "title": "糖尿病人請當心腎病變",
+  "link": "糖尿病人請當心腎病變",
+  "footerImages": ["images/pic_66_1.jpg"],
+  "id": 66,
+  "content": "66.html"
+  },   
+  {
+    "img": "images/pic_65.jpg",
+    "headimg": "",
+    "h5": "文／陳韻婷（營養治療科營養師）",
+    "title": "糖尿病友發生腎病變時，飲食該注意什麼？",
+    "link": "糖尿病友發生腎病變時，飲食該注意什麼？",
+    "footerImages": ["images/pic_65_1.jpg","images/pic_65_2.jpg"],
+    "id": 65,
+    "content": "65.html"
+    },   
+  {
+    "img": "images/pic_64.jpg",
+    "headimg": "",
+    "h5": "文／田知學（急診重症醫學部代理主任）",
+    "title": "夏季炎熱高溫，年長者慎防熱傷害",
+    "link": "夏季炎熱高溫，年長者慎防熱傷害",
+    "footerImages": ["images/pic_64_1.jpg","images/pic_64_2.jpg"],
+    "id": 64,
+    "content": "64.html"
+    },   
+  {
+    "img": "images/pic_63.jpg",
+    "headimg": "",
+    "h5": "文／黃任嫻（大腸直腸外科代理主任）",
+    "title": "大腸鏡檢查該注意什麼？",
+    "link": "大腸鏡檢查該注意什麼？",
+    "footerImages": ["images/pic_63_1.jpg","images/pic_63_2.jpg"],
+    "id": 63,
+    "content": "63.html"
+    },   
+  {
+    "img": "images/pic_62.jpg",
+    "headimg": "",
+    "h5": "文／尤和平（心臟血管內科主治醫師）",
+    "title": "戒菸好難，該怎麼辦？",
+    "link": "戒菸好難，該怎麼辦？",
+    "footerImages": ["images/pic_62_1.jpg","images/pic_62_2.jpg"],
+    "id": 62,
+    "content": "62.html"
+    },   
+  {
     "img": "images/pic_61.jpg",
     "headimg": "",
     "h5": "文／李林鍵（復健醫學部主治醫師）",
